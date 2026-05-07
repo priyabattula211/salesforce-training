@@ -24,6 +24,11 @@ This repository contains my daily learning progress, notes, and practical unders
   - Day-1
   - Day-2
   - ...
+- Week -2
+    - Day-1
+    - Day-2
+    - ...
+-....
 
 ## Tools & Platforms
 - Salesforce Trailhead
