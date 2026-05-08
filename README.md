@@ -1,39 +1,69 @@
-# salesforce-training
+# Salesforce Summer Training Program
 
+## Overview
+This repository contains my learning progress, notes, assignments, and hands-on practice completed during the Salesforce Summer Training Program.
 
-This repository contains my daily learning progress, notes, and practical understanding from the Salesforce Summer Program.
+The training focuses on:
+- Salesforce Basics
+- CRM Concepts
+- Data Modeling
+- Business Workflow
+- Trailhead Practice
+
+---
 
 ## Topics Covered
-- Salesforce CRM Basics
-- Customer 360
-- Salesforce Platform Basics
+- Salesforce Platform
+- CRM Fundamentals
+- Accounts, Contacts, Leads, Opportunities
+- Salesforce Playground
 - Data Model Basics
-- Leads, Contacts, Accounts & Opportunities
-- Salesforce Objects and Relationships
-- Automation & Real-Time Data
-- Dashboards and Reporting
+- Basic Customization
 
-## Learning Goals
-- Understand Salesforce fundamentals
-- Learn CRM concepts and workflows
-- Explore Salesforce platform and data model
-- Build strong basics for Salesforce Development
+---
+
+## Business Workflow
+Lead → Contact → Opportunity → Customer
+
+---
+
+## Real-World Mapping
+
+| Salesforce Object | Example |
+|---|---|
+| Lead | Student Inquiry |
+| Account | College |
+| Contact | Student |
+| Opportunity | Admission Process |
+
+---
+
+## Trailhead Modules
+- Salesforce Values: Quick Look
+- Salesforce Developer: Quick Look
+- Salesforce CRM
+- Trailhead Playground Management
+- Platform Basics
+- Data Model Basics
+
+---
 
 ## Repository Structure
 - Week-1
   - Day-1
   - Day-2
-  - ...
-- Week -2
-    - Day-1
-    - Day-2
-    - ...
--....
+- Week-2
+  - Day-1
+  - Day-2
 
-## Tools & Platforms
+---
+
+## Tools Used
 - Salesforce Trailhead
 - Salesforce Developer Edition
 - GitHub
 
+---
+
 ## Overall Learning
-Through this program, I learned how Salesforce helps businesses manage customer relationships, automate workflows, organize data, and improve productivity using CRM solutions.
+This program helped me understand Salesforce fundamentals, CRM workflow, Salesforce objects, and how businesses use Salesforce to manage customer relationships and sales processes.
