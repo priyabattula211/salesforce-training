@@ -121,20 +121,45 @@ Salesforce objects can be understood easily using a real-world business example.
 
 Suppose a software company receives a project requirement from Infosys.
 
-### Real-World Mapping:
+## Business Flow
+
+### Lead
+A person who shows interest in a service or product.
+
+### Contact
+A person whose details are verified and stored in the system.
+
+### Opportunity
+A possible business deal or process with the customer.
+
+### Customer
+A person who successfully completes the process and becomes a customer.
+
+### Flow
+Lead → Contact → Opportunity → Customer
+
+Example:
+A student first fills an admission inquiry form (Lead).  
+After communication, the student details are saved (Contact).  
+The admission process starts (Opportunity).  
+After successful admission, the student becomes a customer.
+
+## Real-Life Mapping – College Admission System
 
 | Salesforce Object | Real-World Example |
 |---|---|
-| Account | Infosys Company |
-| Contact | HR Manager or Project Manager from Infosys |
-| Opportunity | Software Development Project Deal |
+| Account | College |
+| Contact | Student |
+| Lead | Student Inquiry |
+| Opportunity | Admission Process |
 
 ### Scenario Explanation
 
-A company wants to provide software services to Infosys.
+A college wants to manage student admissions using Salesforce CRM.
 
-- Infosys is stored as an **Account** because it represents the organization.
-- The HR Manager or Project Manager from Infosys is stored as a **Contact** because they are the people communicating with the company.
-- The project discussion or business deal is stored as an **Opportunity** because it represents a possible sales deal.
+- The college is stored as an **Account** because it represents the organization.
+- The student is stored as a **Contact** because they are the person interacting with the college.
+- A student inquiry for admission is stored as a **Lead** because the student has shown interest in joining the college.
+- The admission process is stored as an **Opportunity** because it represents a possible admission for the student.
 
-Using this structure, companies can easily manage customer information, track communication, monitor business opportunities, and improve customer relationships efficiently using Salesforce CRM.
+Using this structure, the college can easily manage student information, track admission inquiries, monitor the admission process, and improve communication efficiently using Salesforce CRM.
