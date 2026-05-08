@@ -133,3 +133,6 @@ Lead → Contact → Opportunity → Customer
 - Do not rush badges
 - Practice regularly in Playground
 - Learn business flow clearly
+
+
+# Author
