@@ -1,24 +1,42 @@
-# Week 1 - Salesforce Fundamentals
+# Day 1 – Salesforce CRM Basics
 
-## Topics Learned
-- Introduction to Salesforce CRM
-- Customer 360
-- Salesforce Platform Basics
-- Data Model Basics
-- Leads, Contacts, Accounts, and Opportunities
-- Salesforce Interface & Navigation
+## Topics Covered
+- Introduction to Salesforce
+- What is CRM
+- Salesforce Developer role
+- Salesforce Playground setup
+- Leads, Accounts, Contacts, and Opportunities
+
+---
 
 ## Key Learnings
-- Understood the basics of CRM and Salesforce ecosystem
-- Learned how Salesforce manages customer data
-- Explored Salesforce objects and relationships
-- Learned lead lifecycle and opportunity management
-- Understood the role of automation, AI, and dashboards
+- Salesforce is a cloud-based CRM platform.
+- CRM helps companies manage customer relationships and sales processes.
+- Leads represent potential customers.
+- Accounts represent organizations or companies.
+- Contacts represent people related to accounts.
+- Opportunities represent possible business deals.
 
-## Resources Used
-- Salesforce Explained Videos
-- Salesforce Beginner CRM Tutorials
-- Salesforce Trailhead Modules
+---
 
-## Conclusion
-Week 1 helped me build a strong foundation in Salesforce CRM, platform basics, and data management concepts.
+## Business Workflow
+Lead → Contact → Opportunity → Customer
+
+---
+
+## Real-World Mapping (College Admission System)
+
+| Salesforce Object | Example |
+|---|---|
+| Lead | Student Inquiry |
+| Account | College |
+| Contact | Student |
+| Opportunity | Admission Process |
+
+---
+
+## Trailhead Modules Completed
+- Salesforce Values: Quick Look
+- Salesforce Developer: Quick Look
+- Salesforce CRM
+- Trailhead Playground Management
