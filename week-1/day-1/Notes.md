@@ -134,5 +134,3 @@ Lead → Contact → Opportunity → Customer
 - Practice regularly in Playground
 - Learn business flow clearly
 
-
-# Author
