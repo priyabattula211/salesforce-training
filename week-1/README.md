@@ -216,13 +216,169 @@ View attendance, marks, and course details.
 
 ---
 
-# Overall Understanding After Day 1 & Day 2
+# Day 3 – Salesforce Data Modeling and Business Logic
 
-After completing Day 1 and Day 2, I understood:
+## Topics Covered
+- Objects, Fields, and Records
+- Standard vs Custom Objects
+- Relationships in Salesforce
+- Lookup Relationships
+- Formula Fields
+- Validation Rules
+- Data Modeling Basics
+- Structured Enterprise Data
+
+---
+
+## Key Learnings
+- Objects are used to store business data in Salesforce.
+- Fields store specific pieces of information inside objects.
+- Records represent individual entries inside an object.
+- Relationships connect related data between objects.
+- Formula Fields automate calculations without coding.
+- Validation Rules prevent invalid data entry and improve data quality.
+- Structured data is important for enterprise systems and business automation.
+
+---
+
+## Objects, Fields, and Records
+
+### Object
+An Object is similar to a database table used to store information.
+
+Examples:
+- Student
+- Faculty
+- Course
+- Department
+
+---
+
+### Field
+A Field stores a specific piece of information.
+
+Examples:
+- Student Name
+- Email
+- Age
+- Course Name
+
+---
+
+### Record
+A Record is a single entry inside an object.
+
+Example:
+
+| Student Name | Age | Department |
+|---|---|---|
+| Priya | 19 | IT |
+
+---
+
+## Standard vs Custom Objects
+
+### Standard Objects
+Objects already provided by Salesforce.
+
+Examples:
+- Account
+- Contact
+- Opportunity
+- Lead
+
+### Custom Objects
+Objects created according to business requirements.
+
+Examples:
+- Student
+- Faculty
+- Attendance
+- Department
+
+---
+
+## Relationships in Salesforce
+
+Relationships help connect related data between objects.
+
+### Relationship Examples
+- One Department can contain many Students
+- One Department can contain many Faculty members
+- One Faculty can teach multiple Courses
+
+### Lookup Relationship
+Lookup Relationships are used when objects are related but not fully dependent on each other.
+
+Examples:
+- Student → Department
+- Course → Faculty
+
+---
+
+## Formula Fields
+
+Formula Fields automatically calculate values without manual work.
+
+### Examples
+- Full Name
+- Percentage
+- Remaining Seats
+
+### Advantages
+- Reduces manual calculations
+- Improves accuracy
+- Saves time
+
+---
+
+## Validation Rules
+
+Validation Rules prevent incorrect or invalid data from entering the system.
+
+### Examples
+- Email cannot be empty
+- Student age cannot be negative
+- Filled seats cannot exceed total seats
+
+### Advantages
+- Improves data quality
+- Prevents business errors
+- Maintains consistency
+
+---
+
+## Reflection – Why Structured Data Matters
+
+Structured enterprise data is important because it helps organizations:
+- Organize information properly
+- Maintain relationships between data
+- Reduce duplication
+- Improve reporting
+- Support automation
+- Allow multiple users to work efficiently
+
+Compared to spreadsheets, enterprise systems like Salesforce provide better scalability, security, and automation.
+
+---
+
+## Trailhead Modules Completed
+- Data Modeling
+- Formulas and Validations
+
+---
+
+# Overall Understanding After Day 1, Day 2 & Day 3
+
+After completing Day 1, Day 2, and Day 3, I understood:
 - Basics of Salesforce CRM
 - CRM workflow and customer management
 - Salesforce Platform structure
-- Apps, Objects, and Tabs
+- Apps, Objects, Tabs, Fields, and Records
+- Standard vs Custom Objects
+- Relationships in Salesforce
 - Difference between configuration and coding
+- Formula Fields and Validation Rules
+- Importance of structured enterprise data
 - Role of Salesforce Admin and Developer
 - How Salesforce helps businesses automate processes and manage data efficiently
