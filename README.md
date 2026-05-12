@@ -1,3 +1,19 @@
+<div align="center">
+
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" 
+    alt="Salesforce Banner"
+    width="220"
+  />
+
+  <h1>🚀 Salesforce Project</h1>
+
+  <p>
+    Building cloud-based solutions using Salesforce CRM, Apex, Lightning,
+    Automation, and AI-powered technologies.
+  </p>
+
+</div>
 # Salesforce Summer Training Program
 
 ## Overview
