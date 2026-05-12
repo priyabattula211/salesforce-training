@@ -1,4 +1,4 @@
-#  Salesforce Training – Week 1 
+# 🚀 Salesforce Training – Week 1 
 
 ## Day 1 – Salesforce CRM Basics
 
@@ -368,9 +368,140 @@ Compared to spreadsheets, enterprise systems like Salesforce provide better scal
 
 ---
 
-# Overall Understanding After Day 1, Day 2 & Day 3
+# Day 4 – Salesforce Automation and Flows
 
-After completing Day 1, Day 2, and Day 3, I understood:
+## Topics Covered
+- Introduction to Automation
+- Salesforce Flow Builder
+- Types of Flows
+- No-Code Automation
+- Manual vs Automated Systems
+- Workflow Automation
+- Business Process Automation
+
+---
+
+## Key Learnings
+- Automation helps businesses reduce repetitive manual work.
+- Salesforce Flow Builder is used to automate business processes without coding.
+- Different types of flows are used for different business requirements.
+- Automation improves productivity, accuracy, and efficiency.
+- No-code automation allows businesses to build workflows quickly.
+
+---
+
+## What is Automation?
+
+Automation means performing tasks automatically without continuous human effort.
+
+Businesses use automation to:
+- Save time
+- Reduce manual work
+- Improve productivity
+- Reduce human errors
+- Improve business efficiency
+
+---
+
+## What is a Flow?
+
+A Flow is a no-code automation tool in Salesforce used to automate workflows and business processes.
+
+Using Flow Builder, businesses can:
+- Create records
+- Update records
+- Send notifications
+- Automate approvals
+- Collect user input
+
+Flows use drag-and-drop components instead of coding.
+
+---
+
+## Types of Flows
+
+### Screen Flow
+Used when user interaction is required.
+
+#### Example
+Student Registration Form
+
+---
+
+### Record-Triggered Flow
+Runs automatically when records are created or updated.
+
+#### Example
+Automatically sending a confirmation email when a student record is created.
+
+---
+
+### Scheduled Flow
+Runs automatically at scheduled times.
+
+#### Example
+Sending daily fee reminder emails.
+
+---
+
+### Autolaunched Flow
+Runs automatically in the background without user interaction.
+
+#### Example
+Automatically updating attendance percentage.
+
+---
+
+## Manual System vs Automated System
+
+| Manual System | Automated System |
+|---|---|
+| Requires human effort | Tasks run automatically |
+| Slower process | Faster process |
+| More chances of errors | Improved accuracy |
+| Difficult to scale | Easily scalable |
+
+---
+
+## Real-World Workflow Examples
+
+### Student Admission Automation
+- Student submits admission form
+- Student record gets created automatically
+- Confirmation email is sent
+- Admin receives notification
+
+### Fee Reminder Automation
+- System checks pending fees daily
+- Reminder emails are sent automatically
+- Reports are generated for admin
+
+### Course Registration Automation
+- Student enters details using a form
+- Flow validates data
+- Registration records are created automatically
+
+---
+
+## Advantages of No-Code Automation
+- Faster development
+- Easy maintenance
+- Reduces manual work
+- Improves productivity
+- Less coding required
+- Better process management
+
+---
+
+## Trailhead Modules Completed
+- Flow Builder Basics
+- Automation Basics
+
+---
+
+# Overall Understanding After Day 1, Day 2, Day 3 & Day 4
+
+After completing Day 1, Day 2, Day 3, and Day 4, I understood:
 - Basics of Salesforce CRM
 - CRM workflow and customer management
 - Salesforce Platform structure
@@ -380,5 +511,8 @@ After completing Day 1, Day 2, and Day 3, I understood:
 - Difference between configuration and coding
 - Formula Fields and Validation Rules
 - Importance of structured enterprise data
+- Salesforce automation and Flow Builder
+- Different types of Flows
+- No-code workflow automation
 - Role of Salesforce Admin and Developer
 - How Salesforce helps businesses automate processes and manage data efficiently
