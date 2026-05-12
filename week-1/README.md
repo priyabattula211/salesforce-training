@@ -1,4 +1,4 @@
-# 🚀 Salesforce Training – Week 1 
+#  Salesforce Training – Week 1 
 
 ## Day 1 – Salesforce CRM Basics
 
