@@ -3,7 +3,7 @@
 ## Overview
 This repository contains my learning progress, notes, assignments, and hands-on practice completed during the Salesforce Summer Training Program.
 
-The training focuses on understanding Salesforce CRM concepts, platform architecture, business workflows, data modeling, and Salesforce development fundamentals through Trailhead modules, practical tasks, and real-world examples.
+The training focuses on understanding Salesforce CRM concepts, platform architecture, business workflows, data modeling, automation, and Salesforce development fundamentals through Trailhead modules, practical tasks, and real-world examples.
 
 ---
 
@@ -21,6 +21,11 @@ The training focuses on understanding Salesforce CRM concepts, platform architec
 - Salesforce Admin vs Developer
 - Formula Fields and Validation Rules
 - Data Modeling Basics
+- Salesforce Automation
+- Flow Builder
+- Types of Flows
+- Business Workflow Automation
+- No-Code Automation
 - Basic System Design
 - Business Workflow Understanding
 
@@ -65,6 +70,32 @@ This activity helped me understand how enterprise systems use relationships to m
 
 ---
 
+## Automation Workflow Design
+
+As part of Day 4 learning, I understood how Salesforce automation helps businesses reduce repetitive manual work using Flow Builder.
+
+### Workflow Examples
+
+#### Student Admission Automation
+- Student submits admission form
+- Student record gets created automatically
+- Confirmation email is sent automatically
+- Admin receives notification
+
+#### Fee Reminder Automation
+- System checks pending fee records daily
+- Reminder emails are sent automatically
+- Reports are generated for admin
+
+#### Course Registration Automation
+- Student enters details using a form
+- Flow validates data automatically
+- Course registration records are created
+
+These workflows helped me understand how businesses automate processes using Salesforce Flows and no-code tools.
+
+---
+
 ## Trailhead Modules
 - Salesforce Values: Quick Look
 - Salesforce Developer: Quick Look
@@ -74,6 +105,8 @@ This activity helped me understand how enterprise systems use relationships to m
 - Agentforce 360 Platform Development Basics
 - Data Modeling
 - Formulas and Validations
+- Flow Builder Basics
+- Automation Basics
 
 ---
 
@@ -96,6 +129,9 @@ This activity helped me understand how enterprise systems use relationships to m
 - Relationships connect related business data.
 - Formula Fields automate repetitive calculations.
 - Validation Rules help prevent invalid data entry.
+- Salesforce Flow Builder helps automate business processes.
+- Different types of Flows are used for different automation requirements.
+- No-code automation reduces manual work and improves productivity.
 - Salesforce supports both no-code configuration and coding-based customization.
 - Multi-tenant architecture allows multiple organizations to share the same infrastructure securely.
 - Salesforce Developers use Apex, APIs, and Lightning Components to extend functionality.
@@ -103,8 +139,8 @@ This activity helped me understand how enterprise systems use relationships to m
 ---
 
 ## Overall Learning
-This program helped me understand Salesforce fundamentals, CRM workflow, Salesforce objects, apps, tabs, fields, records, relationships, platform architecture, and the difference between configuration and coding.
+This program helped me understand Salesforce fundamentals, CRM workflow, Salesforce objects, apps, tabs, fields, records, relationships, platform architecture, automation concepts, and the difference between configuration and coding.
 
 I also learned how businesses use Salesforce to manage customer relationships, automate business processes, maintain structured enterprise data, and build scalable applications using the Salesforce Platform.
 
-Through Trailhead practice and assignments, I improved my understanding of how Salesforce works internally and how developers and administrators work together to build efficient business solutions.
+Through Trailhead practice and assignments, I improved my understanding of how Salesforce works internally and how developers and administrators work together to build efficient business solutions using both automation tools and development technologies.
