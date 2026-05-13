@@ -14,12 +14,13 @@
   </p>
 
 </div>
+
 # Salesforce Summer Training Program
 
 ## Overview
 This repository contains my learning progress, notes, assignments, and hands-on practice completed during the Salesforce Summer Training Program.
 
-The training focuses on understanding Salesforce CRM concepts, platform architecture, business workflows, data modeling, automation, and Salesforce development fundamentals through Trailhead modules, practical tasks, and real-world examples.
+The training focuses on understanding Salesforce CRM concepts, platform architecture, business workflows, data modeling, automation, Apex programming, and Salesforce development fundamentals through Trailhead modules, practical tasks, and real-world examples.
 
 ---
 
@@ -42,6 +43,11 @@ The training focuses on understanding Salesforce CRM concepts, platform architec
 - Types of Flows
 - Business Workflow Automation
 - No-Code Automation
+- Apex Programming Basics
+- Declarative vs Programmatic Development
+- Flow vs Apex
+- Business Logic Design
+- Enterprise System Architecture
 - Basic System Design
 - Business Workflow Understanding
 
@@ -69,13 +75,14 @@ This mapping helped me understand how real-world systems can be designed using S
 
 ## College Management System Design
 
-As part of Day 3 learning, I designed a simple College Management System using Salesforce concepts.
+As part of the training, I designed a simple College Management System using Salesforce concepts.
 
 ### Objects Used
 - Student
 - Faculty
 - Course
 - Department
+- Fees
 
 ### Relationships
 - One Department can have many Students
@@ -112,6 +119,80 @@ These workflows helped me understand how businesses automate processes using Sal
 
 ---
 
+## Apex and Business Logic Understanding
+
+As part of Day 5 learning, I understood why enterprise applications eventually require programming in addition to declarative tools like Flows and Validation Rules.
+
+### What I Learned
+- Apex is Salesforce’s programming language
+- Declarative development uses clicks instead of code
+- Programmatic development uses coding for advanced requirements
+- Flows are useful for simple and medium-level automation
+- Apex is required for complex enterprise business logic
+
+---
+
+## Real-World Scenarios Where Apex is Needed
+
+### Complex Fee Calculation
+Fee calculation may depend on:
+- Scholarship
+- Hostel facility
+- Transport
+- Attendance
+- Previous dues
+
+This type of complex logic is better handled using Apex.
+
+---
+
+### Payment Gateway Integration
+External integrations such as:
+- Razorpay
+- PhonePe
+- Online payment verification
+
+require Apex because they involve:
+- API communication
+- Authentication
+- External system handling
+
+---
+
+### Eligibility Checking System
+Student eligibility may depend on:
+- Attendance percentage
+- Internal marks
+- Pending fee status
+- Course prerequisites
+
+This type of multi-condition logic becomes easier to manage using Apex programming.
+
+---
+
+## Declarative vs Programmatic Development
+
+| Declarative Development | Programmatic Development |
+|---|---|
+| Uses clicks instead of code | Uses programming logic |
+| Easier to maintain | More flexible |
+| Faster implementation | Suitable for advanced requirements |
+| Used for simple automation | Used for enterprise-level logic |
+
+---
+
+## Flow vs Apex
+
+| Flow | Apex |
+|---|---|
+| No-code automation | Code-based development |
+| Easier to build | Requires programming knowledge |
+| Best for simple workflows | Best for advanced business logic |
+| Limited flexibility | Highly flexible |
+| Faster for small automation | Better for enterprise systems |
+
+---
+
 ## Trailhead Modules
 - Salesforce Values: Quick Look
 - Salesforce Developer: Quick Look
@@ -123,6 +204,8 @@ These workflows helped me understand how businesses automate processes using Sal
 - Formulas and Validations
 - Flow Builder Basics
 - Automation Basics
+- Apex & .NET Basics
+- Apex Basics & Database
 
 ---
 
@@ -148,6 +231,8 @@ These workflows helped me understand how businesses automate processes using Sal
 - Salesforce Flow Builder helps automate business processes.
 - Different types of Flows are used for different automation requirements.
 - No-code automation reduces manual work and improves productivity.
+- Apex is Salesforce’s programming language for advanced business logic.
+- Enterprise systems eventually require programming for scalability and flexibility.
 - Salesforce supports both no-code configuration and coding-based customization.
 - Multi-tenant architecture allows multiple organizations to share the same infrastructure securely.
 - Salesforce Developers use Apex, APIs, and Lightning Components to extend functionality.
@@ -155,8 +240,15 @@ These workflows helped me understand how businesses automate processes using Sal
 ---
 
 ## Overall Learning
-This program helped me understand Salesforce fundamentals, CRM workflow, Salesforce objects, apps, tabs, fields, records, relationships, platform architecture, automation concepts, and the difference between configuration and coding.
+This program helped me understand Salesforce fundamentals, CRM workflow, Salesforce objects, apps, tabs, fields, records, relationships, platform architecture, automation concepts, Apex programming basics, and the difference between configuration and coding.
 
-I also learned how businesses use Salesforce to manage customer relationships, automate business processes, maintain structured enterprise data, and build scalable applications using the Salesforce Platform.
+I also learned how businesses use Salesforce to:
+- Manage customer relationships
+- Automate business processes
+- Maintain structured enterprise data
+- Build scalable applications
+- Implement advanced business logic
+- Integrate external systems
+- Design enterprise-level solutions
 
-Through Trailhead practice and assignments, I improved my understanding of how Salesforce works internally and how developers and administrators work together to build efficient business solutions using both automation tools and development technologies.
+Through Trailhead practice and assignments, I improved my understanding of how Salesforce works internally and how developers and administrators work together to build efficient business solutions using both declarative tools and programmatic development.
