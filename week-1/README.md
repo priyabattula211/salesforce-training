@@ -499,20 +499,192 @@ Automatically updating attendance percentage.
 
 ---
 
-# Overall Understanding After Day 1, Day 2, Day 3 & Day 4
+# Day 5 – Introduction to Apex and Business Logic
 
-After completing Day 1, Day 2, Day 3, and Day 4, I understood:
+## Topics Covered
+- Introduction to Apex
+- Declarative vs Programmatic Development
+- Flow vs Apex
+- Business Logic Design
+- Real-World Apex Use Cases
+- Enterprise Application Development
+- Complex Automation Requirements
+
+---
+
+## Key Learnings
+- Apex is Salesforce’s programming language.
+- Declarative development uses clicks instead of code.
+- Programmatic development uses coding for advanced requirements.
+- Flows are useful for simple and medium-level automation.
+- Apex is required for advanced business logic and integrations.
+- Enterprise systems eventually require programming for scalability and flexibility.
+
+---
+
+## What is Apex?
+
+Apex is Salesforce’s programming language used to implement custom business logic and advanced automation.
+
+Apex is similar to Java and is specially designed for Salesforce development.
+
+Developers use Apex when:
+- Flows are not enough
+- Complex calculations are required
+- External integrations are needed
+- Advanced automation is required
+
+---
+
+## Declarative vs Programmatic Development
+
+| Declarative Development | Programmatic Development |
+|---|---|
+| Uses clicks instead of code | Uses programming logic |
+| Easier to maintain | More flexible |
+| Faster implementation | Suitable for advanced requirements |
+| Used for simple automation | Used for enterprise-level logic |
+
+---
+
+## Difference Between Flow and Apex
+
+| Flow | Apex |
+|---|---|
+| No-code automation | Code-based development |
+| Easier to build | Requires programming knowledge |
+| Best for simple workflows | Best for advanced logic |
+| Limited flexibility | Highly flexible |
+| Faster for small automation | Better for enterprise systems |
+
+---
+
+## Real Examples Where Apex is Needed
+
+### Complex Fee Calculation
+Fee calculation may depend on:
+- Scholarship
+- Hostel facility
+- Transport facility
+- Attendance
+- Previous dues
+
+This type of complex calculation is better handled using Apex.
+
+---
+
+### Payment Gateway Integration
+External integrations such as:
+- Razorpay
+- PhonePe
+- Online payment verification
+
+require Apex because they involve:
+- API communication
+- Authentication
+- Response handling
+
+---
+
+### Eligibility Checking System
+Student eligibility may depend on:
+- Attendance percentage
+- Internal marks
+- Pending fees
+- Course prerequisites
+
+This type of multi-condition business logic becomes easier to manage using Apex.
+
+---
+
+## Apex Usage in College Management System
+
+Example:
+
+A student should be allowed to register for exams only if:
+- Attendance is above 75%
+- No pending fee exists
+- Internal marks are above minimum requirement
+
+This logic becomes difficult to manage using only Flow.
+
+Apex provides:
+- Better flexibility
+- Better scalability
+- Better maintainability
+
+for enterprise applications.
+
+---
+
+## Pseudocode Examples
+
+### Example 1
+
+```text
+IF seats are full
+THEN block registration
+```
+
+### Example 2
+
+```text
+IF attendance < 75%
+THEN notify student
+```
+
+### Example 3
+
+```text
+IF fee is unpaid
+THEN restrict hall ticket generation
+```
+
+### Example 4
+
+```text
+IF marks > 90%
+THEN assign scholarship
+```
+
+---
+
+## Reflection – Why Enterprise Systems Need Programming
+
+Enterprise systems become more complex as business operations grow.
+
+Although Salesforce provides many no-code tools, advanced business requirements often require:
+- Complex calculations
+- Dynamic business rules
+- External integrations
+- Large-scale automation
+
+That is why Apex programming becomes important in Salesforce development.
+
+---
+
+## Trailhead Modules Completed
+- Apex & .NET Basics
+- Apex Basics & Database
+
+---
+
+# Overall Understanding After Day 1 to Day 5
+
+After completing Day 1 to Day 5, I understood:
 - Basics of Salesforce CRM
 - CRM workflow and customer management
 - Salesforce Platform structure
 - Apps, Objects, Tabs, Fields, and Records
 - Standard vs Custom Objects
 - Relationships in Salesforce
-- Difference between configuration and coding
 - Formula Fields and Validation Rules
-- Importance of structured enterprise data
 - Salesforce automation and Flow Builder
 - Different types of Flows
 - No-code workflow automation
+- Difference between configuration and coding
+- Declarative vs Programmatic Development
+- Apex programming basics
+- Importance of business logic in enterprise systems
 - Role of Salesforce Admin and Developer
 - How Salesforce helps businesses automate processes and manage data efficiently
