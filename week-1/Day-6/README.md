@@ -239,7 +239,7 @@ Without automation, organizations would struggle to manage business operations e
 
 ---
 
-## Q16. Conclusion
+## Conclusion
 
 From Day 6 learning, I understood how Salesforce retrieves data using SOQL and how Apex Triggers help enterprise systems react automatically to business events.
 
