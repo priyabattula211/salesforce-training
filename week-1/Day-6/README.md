@@ -1,6 +1,6 @@
 # Day 6 – SOQL, Apex Triggers, and Event-Driven Systems
 
-## Q1. What is SOQL?
+## 1. What is SOQL?
 
 SOQL stands for Salesforce Object Query Language.
 
@@ -15,7 +15,7 @@ Developers use SOQL to:
 
 ---
 
-## Q2. Write Example SOQL Queries
+## 2. Write Example SOQL Queries
 
 ### Find all students
 
@@ -49,7 +49,7 @@ WHERE Available_Seats__c > 0
 
 ---
 
-## Q3. What is an Apex Trigger?
+## 3. What is an Apex Trigger?
 
 An Apex Trigger is code that runs automatically when records are inserted, updated, or deleted in Salesforce.
 
@@ -57,7 +57,7 @@ Triggers help systems react automatically to business events.
 
 ---
 
-## Q4. Explain Trigger Events
+## 4. Explain Trigger Events
 
 | Trigger Event | Description |
 |---|---|
@@ -70,7 +70,7 @@ Triggers help systems react automatically to business events.
 
 ---
 
-## Q5. Write a Before Trigger Example
+## 5. Write a Before Trigger Example
 
 ```apex
 trigger StudentBeforeTrigger on Student__c (before insert) {
@@ -96,7 +96,7 @@ If the age is negative, Salesforce prevents the record from being saved.
 
 ---
 
-## Q6. Write an After Trigger Example
+## 6. Write an After Trigger Example
 
 ```apex
 trigger StudentAfterTrigger on Student__c (after insert) {
@@ -121,7 +121,7 @@ In real systems, this can:
 
 ---
 
-## Q7. Difference Between Before Trigger and After Trigger
+## 7. Difference Between Before Trigger and After Trigger
 
 | Before Trigger | After Trigger |
 |---|---|
@@ -131,7 +131,7 @@ In real systems, this can:
 
 ---
 
-## Q8. Difference Between Flow and Trigger
+## 8. Difference Between Flow and Trigger
 
 | Flow | Trigger |
 |---|---|
@@ -142,7 +142,7 @@ In real systems, this can:
 
 ---
 
-## Q9. When Should We Use Flow?
+## 9. When Should We Use Flow?
 
 Flows are suitable for:
 - Sending emails
@@ -152,7 +152,7 @@ Flows are suitable for:
 
 ---
 
-## Q10. When Should We Use Trigger?
+## 10. When Should We Use Trigger?
 
 Triggers are suitable for:
 - Complex calculations
@@ -162,7 +162,7 @@ Triggers are suitable for:
 
 ---
 
-## Q11. Real-World Trigger Use Cases
+## 11. Real-World Trigger Use Cases
 
 ### Student Registration
 - Event: After Student Insert
@@ -186,7 +186,7 @@ Triggers are suitable for:
 
 ---
 
-## Q12. What are Event-Driven Systems?
+## 12. What are Event-Driven Systems?
 
 Event-driven systems automatically react when events occur.
 
@@ -200,7 +200,7 @@ This reduces manual work and improves efficiency.
 
 ---
 
-## Q13. Query Thinking
+## 13. Query Thinking
 
 ```text
 Find all students enrolled in Course A
@@ -212,7 +212,7 @@ Find courses with available seats
 
 ---
 
-## Q14. Why Do Enterprise Systems Need Event-Driven Behavior?
+## 14. Why Do Enterprise Systems Need Event-Driven Behavior?
 
 Enterprise systems handle large amounts of data and users.
 
@@ -227,7 +227,7 @@ Without automation, organizations would struggle to manage business operations e
 
 ---
 
-## Q15. Key Learnings
+## 15. Key Learnings
 
 - SOQL is used to retrieve Salesforce data.
 - Apex Triggers automate actions when data changes.
