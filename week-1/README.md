@@ -1,8 +1,18 @@
-#  Salesforce Training – Week 1 
+#  Salesforce Training – Week 1
 
-## Day 1 – Salesforce CRM Basics
+## Introduction
 
-### Topics Covered
+This repository contains my learning progress, hands-on practice, notes, assignments, and mini-project activities completed during Week 1 of the Salesforce Summer Training Program.
+
+During this week, I learned the fundamentals of Salesforce CRM, platform architecture, data modeling, automation, Apex programming, SOQL querying, Apex Triggers, and event-driven systems through Trailhead modules, practical activities, and real-world business examples.
+
+The training helped me understand how enterprise applications are designed using both declarative tools and programmatic development in Salesforce.
+
+---
+
+# Day 1 – Salesforce CRM Basics
+
+## Topics Covered
 - Introduction to Salesforce
 - What is CRM
 - Salesforce Developer role
@@ -93,8 +103,6 @@ An App in Salesforce is a collection of tabs, objects, and functionalities desig
 - Service App
 - College Management App
 
-Apps help users organize their work efficiently.
-
 ---
 
 ## What is an Object?
@@ -104,109 +112,47 @@ An Object is used to store data in Salesforce.
 ### Types of Objects
 
 #### Standard Objects
-Objects already provided by Salesforce.
-
-Examples:
 - Account
 - Contact
 - Opportunity
 - Lead
 
 #### Custom Objects
-Objects created according to business requirements.
-
-Examples:
 - Student
 - Faculty
 - Attendance
 
 ---
 
-## What is a Tab?
-
-A Tab is a user interface element used to access objects and records quickly.
-
-### Examples
-- Accounts Tab
-- Contacts Tab
-- Opportunities Tab
-
-Tabs improve navigation and user experience.
-
----
-
 ## Multi-Tenant Architecture
 
-Salesforce follows multi-tenant architecture, where multiple organizations share the same infrastructure securely.
+Salesforce follows multi-tenant architecture where multiple organizations share the same infrastructure securely.
 
 ### Advantages
 - Secure
+- Scalable
 - Cost efficient
 - Automatic updates
-- Scalable
 
 ---
 
 ## Configuration vs Coding
 
 ### Configuration
-Configuration means building functionality using clicks instead of code.
+Uses clicks instead of code.
 
-#### Examples
+Examples:
 - Validation Rules
 - Flows
 - Reports
-- Dashboards
 
 ### Coding
-Coding is used for advanced business requirements.
+Used for advanced requirements.
 
-#### Technologies Used
+Technologies:
 - Apex
-- Lightning Web Components
 - APIs
-
-#### Examples
-- Payment Gateway Integration
-- Complex Automation Logic
-
----
-
-## Salesforce Admin vs Developer
-
-### Salesforce Admin
-- Works with configuration tools
-- Manages users, reports, dashboards, and automation
-
-### Salesforce Developer
-- Writes code using Apex and Lightning Web Components
-- Builds custom applications and integrations
-
----
-
-## Real-Time System Design
-
-### App Name
-College Management App
-
-### Objects
-- Student
-- Faculty
-- Course
-- Attendance
-- Fees
-- Examination
-
-### User Interaction
-
-#### Admin
-Manages student records, fees, and reports.
-
-#### Faculty
-Updates attendance and marks.
-
-#### Students
-View attendance, marks, and course details.
+- Lightning Web Components
 
 ---
 
@@ -226,89 +172,23 @@ View attendance, marks, and course details.
 - Formula Fields
 - Validation Rules
 - Data Modeling Basics
-- Structured Enterprise Data
 
 ---
 
 ## Key Learnings
-- Objects are used to store business data in Salesforce.
-- Fields store specific pieces of information inside objects.
-- Records represent individual entries inside an object.
-- Relationships connect related data between objects.
-- Formula Fields automate calculations without coding.
-- Validation Rules prevent invalid data entry and improve data quality.
-- Structured data is important for enterprise systems and business automation.
-
----
-
-## Objects, Fields, and Records
-
-### Object
-An Object is similar to a database table used to store information.
-
-Examples:
-- Student
-- Faculty
-- Course
-- Department
-
----
-
-### Field
-A Field stores a specific piece of information.
-
-Examples:
-- Student Name
-- Email
-- Age
-- Course Name
-
----
-
-### Record
-A Record is a single entry inside an object.
-
-Example:
-
-| Student Name | Age | Department |
-|---|---|---|
-| Priya | 19 | IT |
-
----
-
-## Standard vs Custom Objects
-
-### Standard Objects
-Objects already provided by Salesforce.
-
-Examples:
-- Account
-- Contact
-- Opportunity
-- Lead
-
-### Custom Objects
-Objects created according to business requirements.
-
-Examples:
-- Student
-- Faculty
-- Attendance
-- Department
+- Objects store business data.
+- Fields store specific information.
+- Records represent individual entries.
+- Relationships connect business data.
+- Formula Fields automate calculations.
+- Validation Rules improve data quality.
 
 ---
 
 ## Relationships in Salesforce
 
-Relationships help connect related data between objects.
-
-### Relationship Examples
-- One Department can contain many Students
-- One Department can contain many Faculty members
-- One Faculty can teach multiple Courses
-
 ### Lookup Relationship
-Lookup Relationships are used when objects are related but not fully dependent on each other.
+Used when objects are related but not fully dependent.
 
 Examples:
 - Student → Department
@@ -318,47 +198,23 @@ Examples:
 
 ## Formula Fields
 
-Formula Fields automatically calculate values without manual work.
+Formula Fields automatically calculate values.
 
 ### Examples
-- Full Name
 - Percentage
 - Remaining Seats
-
-### Advantages
-- Reduces manual calculations
-- Improves accuracy
-- Saves time
+- Full Name
 
 ---
 
 ## Validation Rules
 
-Validation Rules prevent incorrect or invalid data from entering the system.
+Validation Rules prevent invalid data entry.
 
 ### Examples
-- Email cannot be empty
-- Student age cannot be negative
-- Filled seats cannot exceed total seats
-
-### Advantages
-- Improves data quality
-- Prevents business errors
-- Maintains consistency
-
----
-
-## Reflection – Why Structured Data Matters
-
-Structured enterprise data is important because it helps organizations:
-- Organize information properly
-- Maintain relationships between data
-- Reduce duplication
-- Improve reporting
-- Support automation
-- Allow multiple users to work efficiently
-
-Compared to spreadsheets, enterprise systems like Salesforce provide better scalability, security, and automation.
+- Age cannot be negative
+- Email cannot be blank
+- Seats cannot exceed capacity
 
 ---
 
@@ -371,125 +227,49 @@ Compared to spreadsheets, enterprise systems like Salesforce provide better scal
 # Day 4 – Salesforce Automation and Flows
 
 ## Topics Covered
-- Introduction to Automation
+- Automation Basics
 - Salesforce Flow Builder
 - Types of Flows
-- No-Code Automation
-- Manual vs Automated Systems
 - Workflow Automation
-- Business Process Automation
+- No-Code Automation
 
 ---
 
 ## Key Learnings
-- Automation helps businesses reduce repetitive manual work.
-- Salesforce Flow Builder is used to automate business processes without coding.
-- Different types of flows are used for different business requirements.
-- Automation improves productivity, accuracy, and efficiency.
-- No-code automation allows businesses to build workflows quickly.
-
----
-
-## What is Automation?
-
-Automation means performing tasks automatically without continuous human effort.
-
-Businesses use automation to:
-- Save time
-- Reduce manual work
-- Improve productivity
-- Reduce human errors
-- Improve business efficiency
-
----
-
-## What is a Flow?
-
-A Flow is a no-code automation tool in Salesforce used to automate workflows and business processes.
-
-Using Flow Builder, businesses can:
-- Create records
-- Update records
-- Send notifications
-- Automate approvals
-- Collect user input
-
-Flows use drag-and-drop components instead of coding.
+- Automation reduces manual work.
+- Flow Builder automates processes without coding.
+- Different flows solve different business requirements.
+- Automation improves productivity and efficiency.
 
 ---
 
 ## Types of Flows
 
 ### Screen Flow
-Used when user interaction is required.
-
-#### Example
-Student Registration Form
-
----
+Used for user interaction.
 
 ### Record-Triggered Flow
-Runs automatically when records are created or updated.
-
-#### Example
-Automatically sending a confirmation email when a student record is created.
-
----
+Runs automatically when records change.
 
 ### Scheduled Flow
-Runs automatically at scheduled times.
-
-#### Example
-Sending daily fee reminder emails.
-
----
+Runs at scheduled times.
 
 ### Autolaunched Flow
-Runs automatically in the background without user interaction.
-
-#### Example
-Automatically updating attendance percentage.
-
----
-
-## Manual System vs Automated System
-
-| Manual System | Automated System |
-|---|---|
-| Requires human effort | Tasks run automatically |
-| Slower process | Faster process |
-| More chances of errors | Improved accuracy |
-| Difficult to scale | Easily scalable |
+Runs automatically in the background.
 
 ---
 
 ## Real-World Workflow Examples
 
 ### Student Admission Automation
-- Student submits admission form
-- Student record gets created automatically
-- Confirmation email is sent
-- Admin receives notification
+- Record creation
+- Confirmation email
+- Admin notification
 
 ### Fee Reminder Automation
-- System checks pending fees daily
-- Reminder emails are sent automatically
-- Reports are generated for admin
-
-### Course Registration Automation
-- Student enters details using a form
-- Flow validates data
-- Registration records are created automatically
-
----
-
-## Advantages of No-Code Automation
-- Faster development
-- Easy maintenance
-- Reduces manual work
-- Improves productivity
-- Less coding required
-- Better process management
+- Scheduled reminders
+- Daily checks
+- Automated reports
 
 ---
 
@@ -506,160 +286,43 @@ Automatically updating attendance percentage.
 - Declarative vs Programmatic Development
 - Flow vs Apex
 - Business Logic Design
-- Real-World Apex Use Cases
-- Enterprise Application Development
-- Complex Automation Requirements
+- Enterprise Automation
 
 ---
 
 ## Key Learnings
 - Apex is Salesforce’s programming language.
-- Declarative development uses clicks instead of code.
-- Programmatic development uses coding for advanced requirements.
-- Flows are useful for simple and medium-level automation.
-- Apex is required for advanced business logic and integrations.
-- Enterprise systems eventually require programming for scalability and flexibility.
-
----
-
-## What is Apex?
-
-Apex is Salesforce’s programming language used to implement custom business logic and advanced automation.
-
-Apex is similar to Java and is specially designed for Salesforce development.
-
-Developers use Apex when:
-- Flows are not enough
-- Complex calculations are required
-- External integrations are needed
-- Advanced automation is required
-
----
-
-## Declarative vs Programmatic Development
-
-| Declarative Development | Programmatic Development |
-|---|---|
-| Uses clicks instead of code | Uses programming logic |
-| Easier to maintain | More flexible |
-| Faster implementation | Suitable for advanced requirements |
-| Used for simple automation | Used for enterprise-level logic |
-
----
-
-## Difference Between Flow and Apex
-
-| Flow | Apex |
-|---|---|
-| No-code automation | Code-based development |
-| Easier to build | Requires programming knowledge |
-| Best for simple workflows | Best for advanced logic |
-| Limited flexibility | Highly flexible |
-| Faster for small automation | Better for enterprise systems |
+- Apex handles advanced automation.
+- Enterprise systems require programming logic.
+- Flows are useful for simple automation.
+- Apex is better for complex business logic.
 
 ---
 
 ## Real Examples Where Apex is Needed
 
 ### Complex Fee Calculation
-Fee calculation may depend on:
-- Scholarship
-- Hostel facility
-- Transport facility
-- Attendance
-- Previous dues
-
-This type of complex calculation is better handled using Apex.
-
----
+Uses multiple conditions and calculations.
 
 ### Payment Gateway Integration
-External integrations such as:
-- Razorpay
-- PhonePe
-- Online payment verification
-
-require Apex because they involve:
-- API communication
-- Authentication
-- Response handling
-
----
+Requires APIs and external communication.
 
 ### Eligibility Checking System
-Student eligibility may depend on:
-- Attendance percentage
-- Internal marks
-- Pending fees
-- Course prerequisites
-
-This type of multi-condition business logic becomes easier to manage using Apex.
-
----
-
-## Apex Usage in College Management System
-
-Example:
-
-A student should be allowed to register for exams only if:
-- Attendance is above 75%
-- No pending fee exists
-- Internal marks are above minimum requirement
-
-This logic becomes difficult to manage using only Flow.
-
-Apex provides:
-- Better flexibility
-- Better scalability
-- Better maintainability
-
-for enterprise applications.
+Checks attendance, marks, and fee status together.
 
 ---
 
 ## Pseudocode Examples
-
-### Example 1
-
-```text
-IF seats are full
-THEN block registration
-```
-
-### Example 2
 
 ```text
 IF attendance < 75%
 THEN notify student
 ```
 
-### Example 3
-
 ```text
-IF fee is unpaid
-THEN restrict hall ticket generation
+IF seats are full
+THEN block registration
 ```
-
-### Example 4
-
-```text
-IF marks > 90%
-THEN assign scholarship
-```
-
----
-
-## Reflection – Why Enterprise Systems Need Programming
-
-Enterprise systems become more complex as business operations grow.
-
-Although Salesforce provides many no-code tools, advanced business requirements often require:
-- Complex calculations
-- Dynamic business rules
-- External integrations
-- Large-scale automation
-
-That is why Apex programming becomes important in Salesforce development.
 
 ---
 
@@ -669,22 +332,187 @@ That is why Apex programming becomes important in Salesforce development.
 
 ---
 
-# Overall Understanding After Day 1 to Day 5
+# Day 6 – SOQL, Apex Triggers, and Event-Driven Systems
 
-After completing Day 1 to Day 5, I understood:
-- Basics of Salesforce CRM
-- CRM workflow and customer management
+## Topics Covered
+- SOQL Basics
+- Salesforce Query Language
+- Apex Triggers
+- Before vs After Trigger
+- Flow vs Trigger
+- Event-Driven Systems
+- Platform Events
+- Search Systems
+- CLI Basics
+
+---
+
+## Key Learnings
+- SOQL is used to retrieve Salesforce records.
+- Apex Triggers automate actions when data changes.
+- Before Triggers are used for validation.
+- After Triggers are used for automation.
+- Event-driven systems improve enterprise automation.
+- Platform Events support real-time communication.
+- CLI tools improve developer productivity.
+
+---
+
+## What is SOQL?
+
+SOQL stands for Salesforce Object Query Language.
+
+It is used to retrieve data from Salesforce objects.
+
+### Example
+
+```sql
+SELECT Name FROM Student__c
+```
+
+```sql
+SELECT Name
+FROM Student__c
+WHERE Attendance__c < 75
+```
+
+---
+
+## What is an Apex Trigger?
+
+An Apex Trigger is code that runs automatically when records are inserted, updated, or deleted.
+
+Triggers help automate business processes.
+
+---
+
+## Trigger Events
+
+| Trigger Event | Description |
+|---|---|
+| Before Insert | Runs before saving |
+| After Insert | Runs after saving |
+| Before Update | Runs before updating |
+| After Update | Runs after updating |
+
+---
+
+## Before Trigger Example
+
+```apex
+trigger StudentBeforeTrigger on Student__c (before insert) {
+
+    for(Student__c stu : Trigger.new) {
+
+        if(stu.Age__c < 0) {
+
+            stu.addError('Age cannot be negative');
+
+        }
+
+    }
+
+}
+```
+
+---
+
+## After Trigger Example
+
+```apex
+trigger StudentAfterTrigger on Student__c (after insert) {
+
+    for(Student__c stu : Trigger.new) {
+
+        System.debug('Welcome Email Sent');
+
+    }
+
+}
+```
+
+---
+
+## Flow vs Trigger
+
+| Flow | Trigger |
+|---|---|
+| No-code automation | Code-based automation |
+| Easier to build | More flexible |
+| Best for simple tasks | Best for advanced logic |
+
+---
+
+## Event-Driven Systems
+
+Event-driven systems automatically react when events occur.
+
+Examples:
+- Notifications
+- Record updates
+- Approval processing
+- Automated workflows
+
+---
+
+## Platform Events
+
+Platform Events allow systems to communicate automatically in real time.
+
+### Example
+When a student completes payment:
+- Finance records update
+- Receipt gets generated
+- Notification gets sent
+
+---
+
+## Search Systems
+
+Search functionality helps users quickly retrieve records from enterprise systems.
+
+### Importance
+- Saves time
+- Improves productivity
+- Improves user experience
+
+---
+
+## CLI Basics
+
+CLI stands for Command-Line Interface.
+
+Developers use CLI tools to:
+- Execute commands faster
+- Automate development tasks
+- Improve workflow efficiency
+
+---
+
+## Trailhead Modules Completed
+- Search Solution Basics
+- Agentforce 360 Platform Events Basics
+- Command-Line Interface Basics
+
+---
+
+# Overall Understanding After Week 1
+
+After completing Week 1, I understood:
+- Salesforce CRM fundamentals
 - Salesforce Platform structure
-- Apps, Objects, Tabs, Fields, and Records
-- Standard vs Custom Objects
-- Relationships in Salesforce
+- Apps, Objects, Fields, and Records
+- Relationships and Data Modeling
 - Formula Fields and Validation Rules
-- Salesforce automation and Flow Builder
-- Different types of Flows
-- No-code workflow automation
-- Difference between configuration and coding
+- Automation using Flow Builder
 - Declarative vs Programmatic Development
 - Apex programming basics
-- Importance of business logic in enterprise systems
-- Role of Salesforce Admin and Developer
-- How Salesforce helps businesses automate processes and manage data efficiently
+- SOQL querying
+- Apex Triggers
+- Event-driven systems
+- Platform Events
+- CLI tools and developer workflow
+- Real-world enterprise business automation
+
+This week helped me build a strong foundation in Salesforce development and understand how enterprise systems use automation, business logic, and scalable architecture to manage business operations efficiently.
+```
