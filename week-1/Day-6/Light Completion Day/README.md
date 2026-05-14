@@ -1,10 +1,31 @@
 # Light Completion Day – Search, Platform Events, and CLI Basics
 
+## Introduction
+
+As part of the Light Completion Day tasks, I learned about search systems, platform events, and command-line tools used in Salesforce development.
+
+This session helped me understand how enterprise applications manage fast data searching, real-time event communication, and efficient developer workflows.
+
+I also learned why event-driven systems and CLI tools are important in modern application development.
+
+---
+
+## Topics Covered
+- Search Solution Basics
+- Platform Events Basics
+- Event-Driven Architecture
+- Command-Line Interface (CLI)
+- Developer Workflow Basics
+
+---
+
+# CORE TASKS
+
 ## 1. What is Search Solution Basics?
 
 Search Solution Basics explains how Salesforce search helps users quickly find records and information inside enterprise systems.
 
-Search functionality becomes very important when organizations store large amounts of data.
+Search functionality becomes important when organizations manage large amounts of data.
 
 ---
 
@@ -22,10 +43,10 @@ Search systems help businesses:
 ## 3. Real-World Example of Search System
 
 In a College Management System:
-- Admin can quickly search student records
-- Faculty can find attendance records
-- Finance team can search fee details
-- Students can search course information
+- Admin searches student records
+- Faculty searches attendance details
+- Finance team searches fee records
+- Students search course information
 
 Fast search improves system usability and efficiency.
 
@@ -46,9 +67,9 @@ When a student completes fee payment:
 - Student portal gets updated
 - Receipt gets generated
 - Admin dashboard refreshes
-- Notification gets sent
+- Notifications are sent
 
-This happens automatically using event-driven systems.
+This improves automation and real-time communication.
 
 ---
 
@@ -67,11 +88,11 @@ Event-driven systems:
 
 CLI stands for Command-Line Interface.
 
-CLI tools allow developers to:
+CLI tools help developers:
 - Execute commands faster
 - Automate repetitive tasks
 - Manage projects efficiently
-- Improve deployment workflow
+- Improve development workflow
 
 ---
 
@@ -88,7 +109,7 @@ Developers prefer CLI because:
 
 ## 9. Why is Fast and Accurate Search Important?
 
-Fast and accurate search helps users quickly retrieve important data and improves productivity in enterprise systems.
+Fast and accurate search helps users quickly retrieve important records and improves productivity in enterprise systems.
 
 ---
 
@@ -100,12 +121,11 @@ Platform events allow systems to communicate automatically and support real-time
 
 ## 11. Why Do Developers Use CLI Tools?
 
-Developers use CLI tools because they improve development speed, reduce manual work, and help automate project management tasks.
+Developers use CLI tools because they improve development speed, reduce manual work, and automate project management tasks.
 
 ---
 
-## 12. Key Learnings
-
+## Key Learnings
 - Enterprise systems require efficient search functionality.
 - Platform Events support event-driven communication.
 - Real-time automation improves business efficiency.
@@ -114,7 +134,7 @@ Developers use CLI tools because they improve development speed, reduce manual w
 
 ---
 
-##  Conclusion
+## Conclusion
 
 From this learning session, I understood how search systems, platform events, and command-line tools help businesses build scalable, efficient, and automated enterprise applications.
 
