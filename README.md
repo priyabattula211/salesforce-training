@@ -6,7 +6,7 @@
     width="220"
   />
 
-  <h1>🚀 Salesforce Project</h1>
+  <h1> Salesforce Project</h1>
 
   <p>
     Building cloud-based solutions using Salesforce CRM, Apex, Lightning,
