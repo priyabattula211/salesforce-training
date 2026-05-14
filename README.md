@@ -10,7 +10,7 @@
 
   <p>
     Building cloud-based solutions using Salesforce CRM, Apex, Lightning,
-    Automation, and AI-powered technologies.
+    Automation, SOQL, Triggers, and AI-powered technologies.
   </p>
 
 </div>
@@ -18,9 +18,9 @@
 # Salesforce Summer Training Program
 
 ## Overview
-This repository contains my learning progress, notes, assignments, and hands-on practice completed during the Salesforce Summer Training Program.
+This repository contains my learning progress, notes, assignments, hands-on practice, and mini-project activities completed during the Salesforce Summer Training Program.
 
-The training focuses on understanding Salesforce CRM concepts, platform architecture, business workflows, data modeling, automation, Apex programming, and Salesforce development fundamentals through Trailhead modules, practical tasks, and real-world examples.
+The training focuses on understanding Salesforce CRM concepts, platform architecture, business workflows, data modeling, automation, Apex programming, SOQL querying, Apex Triggers, event-driven systems, and Salesforce development fundamentals through Trailhead modules, practical tasks, and real-world business examples.
 
 ---
 
@@ -47,6 +47,14 @@ The training focuses on understanding Salesforce CRM concepts, platform architec
 - Declarative vs Programmatic Development
 - Flow vs Apex
 - Business Logic Design
+- SOQL Basics
+- Salesforce Query Language
+- Apex Triggers
+- Before vs After Triggers
+- Event-Driven Systems
+- Platform Events
+- Search Systems
+- CLI Basics
 - Enterprise System Architecture
 - Basic System Design
 - Business Workflow Understanding
@@ -170,6 +178,109 @@ This type of multi-condition logic becomes easier to manage using Apex programmi
 
 ---
 
+## SOQL and Apex Trigger Understanding
+
+As part of Day 6 learning, I understood how Salesforce retrieves records using SOQL and how Apex Triggers help enterprise systems react automatically to business events.
+
+### What I Learned
+- SOQL is used to retrieve Salesforce data
+- Apex Triggers automate actions when records change
+- Before Triggers are mainly used for validation
+- After Triggers are mainly used for automation
+- Event-driven systems improve enterprise automation
+- Platform Events support real-time communication
+- CLI tools improve development productivity
+
+---
+
+## Example SOQL Queries
+
+### Retrieve all students
+
+```sql
+SELECT Name FROM Student__c
+```
+
+### Find students with attendance below 75%
+
+```sql
+SELECT Name, Attendance__c
+FROM Student__c
+WHERE Attendance__c < 75
+```
+
+### Find students with pending fees
+
+```sql
+SELECT Name
+FROM Student__c
+WHERE Fee_Status__c = 'Pending'
+```
+
+---
+
+## Apex Trigger Examples
+
+### Before Trigger Example
+
+```apex
+trigger StudentBeforeTrigger on Student__c (before insert) {
+
+    for(Student__c stu : Trigger.new) {
+
+        if(stu.Age__c < 0) {
+
+            stu.addError('Age cannot be negative');
+
+        }
+
+    }
+
+}
+```
+
+This trigger validates student age before saving the record.
+
+---
+
+### After Trigger Example
+
+```apex
+trigger StudentAfterTrigger on Student__c (after insert) {
+
+    for(Student__c stu : Trigger.new) {
+
+        System.debug('Welcome Email Sent');
+
+    }
+
+}
+```
+
+This trigger runs automatically after student record creation.
+
+---
+
+## Event-Driven System Examples
+
+### Student Registration Event
+- Student registers
+- Welcome email gets sent
+- Admin receives notification
+
+### Fee Payment Event
+- Payment status updates automatically
+- Receipt gets generated
+- Student portal refreshes
+
+### Attendance Warning Event
+- Attendance drops below 75%
+- Warning notification gets triggered
+
+These examples helped me understand how enterprise systems automate business operations using event-driven architecture.
+
+---
+
 ## Declarative vs Programmatic Development
 
 | Declarative Development | Programmatic Development |
@@ -193,6 +304,53 @@ This type of multi-condition logic becomes easier to manage using Apex programmi
 
 ---
 
+## Before Trigger vs After Trigger
+
+| Before Trigger | After Trigger |
+|---|---|
+| Runs before saving records | Runs after saving records |
+| Used for validation | Used for automation |
+| Can modify values before save | Used for notifications |
+
+---
+
+## Search Systems Understanding
+
+Search systems help users quickly retrieve records from enterprise applications.
+
+### Importance of Search Systems
+- Saves time
+- Improves productivity
+- Improves user experience
+- Helps manage large-scale data efficiently
+
+---
+
+## Platform Events Understanding
+
+Platform Events support automatic communication between systems in real time.
+
+### Real-World Example
+When a student completes fee payment:
+- Finance records update automatically
+- Receipt gets generated
+- Notification gets sent
+- Student dashboard refreshes
+
+---
+
+## CLI Basics
+
+CLI stands for Command-Line Interface.
+
+Developers use CLI tools to:
+- Execute commands faster
+- Automate development tasks
+- Improve workflow efficiency
+- Manage projects more efficiently
+
+---
+
 ## Trailhead Modules
 - Salesforce Values: Quick Look
 - Salesforce Developer: Quick Look
@@ -206,6 +364,9 @@ This type of multi-condition logic becomes easier to manage using Apex programmi
 - Automation Basics
 - Apex & .NET Basics
 - Apex Basics & Database
+- Search Solution Basics
+- Agentforce 360 Platform Events Basics
+- Command-Line Interface Basics
 
 ---
 
@@ -232,15 +393,20 @@ This type of multi-condition logic becomes easier to manage using Apex programmi
 - Different types of Flows are used for different automation requirements.
 - No-code automation reduces manual work and improves productivity.
 - Apex is Salesforce’s programming language for advanced business logic.
+- SOQL is used for querying Salesforce data.
+- Apex Triggers automate actions when records change.
+- Event-driven systems improve enterprise automation.
+- Platform Events support real-time communication.
+- CLI tools improve developer productivity.
 - Enterprise systems eventually require programming for scalability and flexibility.
 - Salesforce supports both no-code configuration and coding-based customization.
 - Multi-tenant architecture allows multiple organizations to share the same infrastructure securely.
-- Salesforce Developers use Apex, APIs, and Lightning Components to extend functionality.
+- Salesforce Developers use Apex, APIs, Lightning Components, SOQL, and automation tools to extend functionality.
 
 ---
 
 ## Overall Learning
-This program helped me understand Salesforce fundamentals, CRM workflow, Salesforce objects, apps, tabs, fields, records, relationships, platform architecture, automation concepts, Apex programming basics, and the difference between configuration and coding.
+This program helped me understand Salesforce fundamentals, CRM workflow, Salesforce objects, apps, tabs, fields, records, relationships, platform architecture, automation concepts, Apex programming basics, SOQL querying, Apex Triggers, event-driven systems, and the difference between configuration and coding.
 
 I also learned how businesses use Salesforce to:
 - Manage customer relationships
@@ -249,6 +415,7 @@ I also learned how businesses use Salesforce to:
 - Build scalable applications
 - Implement advanced business logic
 - Integrate external systems
+- Use event-driven automation
 - Design enterprise-level solutions
 
 Through Trailhead practice and assignments, I improved my understanding of how Salesforce works internally and how developers and administrators work together to build efficient business solutions using both declarative tools and programmatic development.
