@@ -1,17 +1,41 @@
 # Day 6 – SOQL, Apex Triggers, and Event-Driven Systems
 
+## Introduction
+
+As part of Day 6 Salesforce training, I learned how Salesforce handles data retrieval, automation, and event-driven processing using SOQL and Apex Triggers.
+
+This session helped me understand how enterprise systems automatically react to business events and process large amounts of data efficiently.
+
+I also learned the difference between declarative automation and programmatic automation, along with real-world use cases where Apex Triggers are required.
+
+---
+
+## Topics Covered
+- Introduction to SOQL
+- Salesforce Database Querying
+- Apex Triggers
+- Trigger Events
+- Before vs After Triggers
+- Flow vs Trigger
+- Event-Driven Systems
+- Enterprise Automation
+- Business Logic Automation
+
+---
+
+# CORE TASKS
+
 ## 1. What is SOQL?
 
 SOQL stands for Salesforce Object Query Language.
 
-It is used to retrieve records from Salesforce objects. SOQL is similar to SQL, but it is specially designed for Salesforce data and relationships.
+It is used to retrieve records from Salesforce objects. SOQL is specially designed for Salesforce applications and relationships.
 
 Developers use SOQL to:
 - Retrieve records
 - Filter data
 - Access related objects
 - Process business information
-- Build automation logic
 
 ---
 
@@ -92,8 +116,6 @@ trigger StudentBeforeTrigger on Student__c (before insert) {
 
 This trigger validates student age before saving the record.
 
-If the age is negative, Salesforce prevents the record from being saved.
-
 ---
 
 ## 6. Write an After Trigger Example
@@ -112,12 +134,7 @@ trigger StudentAfterTrigger on Student__c (after insert) {
 
 ### Explanation
 
-This trigger runs after a student record is created.
-
-In real systems, this can:
-- Send welcome emails
-- Notify admins
-- Create related records automatically
+This trigger runs automatically after a student record is created.
 
 ---
 
@@ -137,70 +154,44 @@ In real systems, this can:
 |---|---|
 | No-code automation | Code-based automation |
 | Easier to build | More flexible |
-| Best for simple automation | Best for complex logic |
-| Faster development | Handles advanced business rules |
+| Best for simple automation | Best for advanced logic |
 
 ---
 
-## 9. When Should We Use Flow?
-
-Flows are suitable for:
-- Sending emails
-- Updating fields
-- Creating tasks
-- Approval automation
-
----
-
-## 10. When Should We Use Trigger?
-
-Triggers are suitable for:
-- Complex calculations
-- Multi-condition logic
-- External integrations
-- Advanced business automation
-
----
-
-## 11. Real-World Trigger Use Cases
+## 9. Real-World Trigger Use Cases
 
 ### Student Registration
-- Event: After Student Insert
-- Action: Send welcome email automatically
+Automatically send welcome email after student registration.
 
 ### Attendance Warning
-- Event: After Attendance Update
-- Action: Notify students if attendance falls below 75%
+Notify students when attendance falls below 75%.
 
 ### Fee Pending Alert
-- Event: After Fee Status Update
-- Action: Restrict hall ticket generation
+Restrict hall ticket generation if fees are unpaid.
 
 ### Scholarship Eligibility
-- Event: After Marks Update
-- Action: Assign scholarship automatically
+Automatically assign scholarship eligibility.
 
-### Course Capacity Full
-- Event: After Course Seats Filled
-- Action: Block new registrations
+### Course Capacity
+Block registrations when seats become full.
 
 ---
 
-## 12. What are Event-Driven Systems?
+## 10. What are Event-Driven Systems?
 
 Event-driven systems automatically react when events occur.
 
 Examples:
 - Sending notifications
-- Updating related records
+- Updating records
 - Triggering approvals
 - Processing transactions
 
-This reduces manual work and improves efficiency.
+This improves automation and efficiency.
 
 ---
 
-## 13. Query Thinking
+## 11. Query Thinking
 
 ```text
 Find all students enrolled in Course A
@@ -212,27 +203,24 @@ Find courses with available seats
 
 ---
 
-## 14. Why Do Enterprise Systems Need Event-Driven Behavior?
+## 12. Why Do Enterprise Systems Need Event-Driven Behavior?
 
 Enterprise systems handle large amounts of data and users.
 
-Event-driven behavior helps systems:
-- React instantly to changes
+Event-driven systems help applications:
+- React instantly
 - Reduce manual work
 - Improve automation
-- Support scalability
-- Improve real-time processing
-
-Without automation, organizations would struggle to manage business operations efficiently.
+- Improve scalability
+- Support real-time processing
 
 ---
 
-## 15. Key Learnings
-
-- SOQL is used to retrieve Salesforce data.
+## Key Learnings
+- SOQL is used for querying Salesforce data.
 - Apex Triggers automate actions when data changes.
 - Before Triggers are mainly used for validation.
-- After Triggers are mainly used for automation.
+- After Triggers are used for automation.
 - Flows are useful for simple automation.
 - Triggers are useful for advanced business logic.
 - Event-driven systems improve enterprise automation.
@@ -241,6 +229,6 @@ Without automation, organizations would struggle to manage business operations e
 
 ## Conclusion
 
-From Day 6 learning, I understood how Salesforce retrieves data using SOQL and how Apex Triggers help enterprise systems react automatically to business events.
+From Day 6 learning, I understood how Salesforce retrieves data using SOQL and how Apex Triggers help systems react automatically to business events.
 
-I also learned the importance of event-driven architecture and how automation improves efficiency, scalability, and business productivity.
+I also learned how enterprise applications use event-driven automation to improve efficiency, scalability, and productivity.
