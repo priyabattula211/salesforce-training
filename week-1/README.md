@@ -4,7 +4,7 @@
 
 This repository contains my learning progress, hands-on practice, notes, assignments, and mini-project activities completed during Week 1 of the Salesforce Summer Training Program.
 
-During this week, I learned the fundamentals of Salesforce CRM, platform architecture, data modeling, automation, Apex programming, SOQL querying, Apex Triggers, and event-driven systems through Trailhead modules, practical activities, and real-world business examples.
+During this week, I learned the fundamentals of Salesforce CRM, platform architecture, data modeling, automation, Apex programming, SOQL querying, Apex Triggers, event-driven systems, testing concepts, asynchronous Apex, and Salesforce DX through Trailhead modules, practical activities, and real-world business examples.
 
 The training helped me understand how enterprise applications are designed using both declarative tools and programmatic development in Salesforce.
 
@@ -433,16 +433,6 @@ trigger StudentAfterTrigger on Student__c (after insert) {
 
 ---
 
-## Flow vs Trigger
-
-| Flow | Trigger |
-|---|---|
-| No-code automation | Code-based automation |
-| Easier to build | More flexible |
-| Best for simple tasks | Best for advanced logic |
-
----
-
 ## Event-Driven Systems
 
 Event-driven systems automatically react when events occur.
@@ -467,32 +457,197 @@ When a student completes payment:
 
 ---
 
-## Search Systems
-
-Search functionality helps users quickly retrieve records from enterprise systems.
-
-### Importance
-- Saves time
-- Improves productivity
-- Improves user experience
-
----
-
-## CLI Basics
-
-CLI stands for Command-Line Interface.
-
-Developers use CLI tools to:
-- Execute commands faster
-- Automate development tasks
-- Improve workflow efficiency
-
----
-
 ## Trailhead Modules Completed
 - Search Solution Basics
 - Agentforce 360 Platform Events Basics
 - Command-Line Interface Basics
+
+---
+
+# Day 7 – Salesforce Testing, Async Apex & Salesforce DX
+
+## Topics Covered
+- Salesforce Testing
+- Apex Test Classes
+- Test Cases
+- Asynchronous Apex
+- Future Methods
+- Queueable Apex
+- Salesforce DX
+- CLI Commands
+- Enterprise Development Workflow
+- System Integration Workflow
+
+---
+
+## Key Learnings
+- Testing improves software quality and reliability.
+- Apex Test Classes are required before deployment.
+- Async Apex improves performance using background processing.
+- Salesforce DX supports modern development workflow.
+- GitHub and CLI improve developer productivity.
+- Enterprise systems require structured workflows.
+
+---
+
+## Why Testing Matters
+
+Testing helps:
+- Detect bugs early
+- Improve reliability
+- Maintain software quality
+- Prevent production issues
+
+Enterprise applications require proper testing because they manage important business operations.
+
+---
+
+## Important Test Cases
+
+### Invalid Email Validation
+System should reject invalid emails.
+
+### Duplicate Registration
+Duplicate student records should not be created.
+
+### Seat Limit Validation
+Registration should stop when seats are full.
+
+### Trigger Execution
+Triggers should update records correctly.
+
+---
+
+## Apex Test Class Example
+
+```apex
+@isTest
+public class StudentTriggerTest {
+
+    @isTest
+    static void verifySeatUpdate() {
+
+        Course__c courseObj = new Course__c(
+            Name = 'Salesforce Course',
+            Filled_Seats__c = 0
+        );
+
+        insert courseObj;
+
+        Student__c stu = new Student__c(
+            Name = 'Priya',
+            Course__c = courseObj.Id
+        );
+
+        insert stu;
+
+        Course__c updatedCourse = [
+            SELECT Filled_Seats__c
+            FROM Course__c
+            WHERE Id = :courseObj.Id
+        ];
+
+        System.assertEquals(
+            1,
+            updatedCourse.Filled_Seats__c
+        );
+    }
+}
+```
+
+---
+
+## What is Asynchronous Apex?
+
+Asynchronous Apex executes processes in the background instead of immediately.
+
+### Advantages
+- Better performance
+- Better scalability
+- Improved user experience
+
+---
+
+## Future Method Example
+
+```apex
+public class StudentAsyncHandler {
+
+    @future
+    public static void sendNotification(String studentName) {
+
+        System.debug(
+            'Notification sent to: ' + studentName
+        );
+    }
+}
+```
+
+---
+
+## Queueable Apex Example
+
+```apex
+public class StudentQueueJob implements Queueable {
+
+    public void execute(QueueableContext qc) {
+
+        System.debug('Queueable Job Started');
+
+    }
+}
+```
+
+---
+
+## What is Salesforce DX?
+
+Salesforce DX is a modern Salesforce development environment.
+
+It supports:
+- Source-driven development
+- Team collaboration
+- Better deployment workflow
+- Version control integration
+
+---
+
+## Common CLI Commands
+
+```bash
+sfdx auth:web:login
+```
+
+```bash
+sfdx force:source:push
+```
+
+```bash
+sfdx force:source:pull
+```
+
+```bash
+sfdx force:org:open
+```
+
+---
+
+## Complete Enterprise Workflow Understanding
+
+### Workflow Example
+1. Student submits registration form
+2. Validation Rules verify data
+3. Flow executes automatically
+4. Trigger updates related records
+5. Formula Fields calculate values
+6. Reports and Dashboards display analytics
+
+---
+
+## Trailhead Modules Completed
+- Apex Testing Basics
+- Asynchronous Apex
+- Salesforce DX Basics
 
 ---
 
@@ -511,8 +666,9 @@ After completing Week 1, I understood:
 - Apex Triggers
 - Event-driven systems
 - Platform Events
-- CLI tools and developer workflow
+- Salesforce Testing
+- Asynchronous Apex
+- Salesforce DX and CLI workflow
 - Real-world enterprise business automation
 
-This week helped me build a strong foundation in Salesforce development and understand how enterprise systems use automation, business logic, and scalable architecture to manage business operations efficiently.
-```
+This week helped me build a strong foundation in Salesforce development and understand how enterprise systems use automation, business logic, testing, scalability, and structured workflows to manage business operations efficiently.
