@@ -10,7 +10,7 @@
 
   <p>
     Building cloud-based solutions using Salesforce CRM, Apex, Lightning,
-    Automation, SOQL, Triggers, and AI-powered technologies.
+    Automation, SOQL, Triggers, Testing, Salesforce DX, and AI-powered technologies.
   </p>
 
 </div>
@@ -18,9 +18,9 @@
 # Salesforce Summer Training Program
 
 ## Overview
-This repository contains my learning progress, notes, assignments, hands-on practice, and mini-project activities completed during the Salesforce Summer Training Program.
+This repository contains my learning progress, notes, assignments, hands-on practice, mini-project activities, and workflow implementations completed during the Salesforce Summer Training Program.
 
-The training focuses on understanding Salesforce CRM concepts, platform architecture, business workflows, data modeling, automation, Apex programming, SOQL querying, Apex Triggers, event-driven systems, and Salesforce development fundamentals through Trailhead modules, practical tasks, and real-world business examples.
+The training focuses on understanding Salesforce CRM concepts, platform architecture, business workflows, automation, Apex programming, SOQL querying, Apex Triggers, Testing, Salesforce DX, event-driven systems, and enterprise application development through Trailhead modules, practical tasks, and real-world business examples.
 
 ---
 
@@ -55,20 +55,66 @@ The training focuses on understanding Salesforce CRM concepts, platform architec
 - Platform Events
 - Search Systems
 - CLI Basics
+- Apex Testing
+- Test Classes
+- Test Coverage
+- Asynchronous Apex
+- Future Methods
+- Queueable Apex
+- Batch Apex
+- Scheduled Apex
+- Salesforce DX
+- End-to-End Enterprise Workflow
 - Enterprise System Architecture
 - Basic System Design
 - Business Workflow Understanding
 
 ---
 
-## Business Workflow
-Lead → Contact → Opportunity → Customer
+# Day 1 – Salesforce CRM Basics
 
-This workflow explains how businesses manage customer interactions and sales processes using Salesforce CRM.
+## Topics Covered
+- Introduction to Salesforce
+- What is CRM
+- Salesforce Developer role
+- Salesforce Playground setup
+- Leads, Accounts, Contacts, and Opportunities
 
 ---
 
-## Real-World Mapping
+## Key Learnings
+- Salesforce is a cloud-based CRM platform used by businesses to manage customer relationships.
+- CRM helps organizations track customers, sales activities, and communication efficiently.
+- Salesforce provides tools for automation, application development, reporting, and data management.
+- Salesforce Developers build custom applications and business logic on the Salesforce Platform.
+
+---
+
+## CRM Concepts
+
+### Lead
+A Lead represents a potential customer or inquiry.
+
+### Account
+An Account represents a company or organization.
+
+### Contact
+A Contact represents a person associated with an account.
+
+### Opportunity
+An Opportunity represents a potential business deal or sales process.
+
+---
+
+## Business Workflow
+
+Lead → Contact → Opportunity → Customer
+
+This workflow helps businesses track customer interactions from the initial inquiry to becoming a customer.
+
+---
+
+## Real-World Mapping (College Admission System)
 
 | Salesforce Object | Example |
 |---|---|
@@ -77,151 +123,342 @@ This workflow explains how businesses manage customer interactions and sales pro
 | Contact | Student |
 | Opportunity | Admission Process |
 
-This mapping helped me understand how real-world systems can be designed using Salesforce objects and CRM concepts.
+---
+
+## Trailhead Modules Completed
+- Salesforce Values: Quick Look
+- Salesforce Developer: Quick Look
+- Salesforce CRM
+- Trailhead Playground Management
 
 ---
 
-## College Management System Design
+# Day 2 – Salesforce Platform Basics
 
-As part of the training, I designed a simple College Management System using Salesforce concepts.
+## Topics Covered
+- Salesforce Platform Overview
+- Apps, Objects, and Tabs
+- Salesforce Architecture
+- Multi-Tenant Architecture
+- Configuration vs Coding
+- Salesforce Admin vs Developer
+- Platform Development Basics
 
-### Objects Used
+---
+
+## Key Learnings
+- Salesforce Platform allows businesses to build and manage applications on the cloud.
+- Apps are collections of related objects and features designed for specific business purposes.
+- Objects are database tables used to store information.
+- Tabs help users access objects and records easily.
+- Salesforce supports both no-code configuration and coding-based development.
+
+---
+
+## What is an App?
+
+An App in Salesforce is a collection of tabs, objects, and functionalities designed for a specific business purpose.
+
+### Examples
+- Sales App
+- Service App
+- College Management App
+
+---
+
+## What is an Object?
+
+An Object is used to store data in Salesforce.
+
+### Types of Objects
+
+#### Standard Objects
+- Account
+- Contact
+- Opportunity
+- Lead
+
+#### Custom Objects
 - Student
 - Faculty
-- Course
-- Department
-- Fees
-
-### Relationships
-- One Department can have many Students
-- One Department can have many Faculty members
-- One Faculty can teach multiple Courses
-
-This activity helped me understand how enterprise systems use relationships to maintain structured and connected data.
+- Attendance
 
 ---
 
-## Automation Workflow Design
+## Multi-Tenant Architecture
 
-As part of Day 4 learning, I understood how Salesforce automation helps businesses reduce repetitive manual work using Flow Builder.
+Salesforce follows multi-tenant architecture where multiple organizations share the same infrastructure securely.
 
-### Workflow Examples
-
-#### Student Admission Automation
-- Student submits admission form
-- Student record gets created automatically
-- Confirmation email is sent automatically
-- Admin receives notification
-
-#### Fee Reminder Automation
-- System checks pending fee records daily
-- Reminder emails are sent automatically
-- Reports are generated for admin
-
-#### Course Registration Automation
-- Student enters details using a form
-- Flow validates data automatically
-- Course registration records are created
-
-These workflows helped me understand how businesses automate processes using Salesforce Flows and no-code tools.
+### Advantages
+- Secure
+- Scalable
+- Cost efficient
+- Automatic updates
 
 ---
 
-## Apex and Business Logic Understanding
+## Configuration vs Coding
 
-As part of Day 5 learning, I understood why enterprise applications eventually require programming in addition to declarative tools like Flows and Validation Rules.
+### Configuration
+Uses clicks instead of code.
 
-### What I Learned
-- Apex is Salesforce’s programming language
-- Declarative development uses clicks instead of code
-- Programmatic development uses coding for advanced requirements
-- Flows are useful for simple and medium-level automation
-- Apex is required for complex enterprise business logic
+Examples:
+- Validation Rules
+- Flows
+- Reports
+
+### Coding
+Used for advanced requirements.
+
+Technologies:
+- Apex
+- APIs
+- Lightning Web Components
 
 ---
 
-## Real-World Scenarios Where Apex is Needed
+## Trailhead Modules Completed
+- Agentforce 360 Platform Basics
+- Agentforce 360 Platform Development Basics
+
+---
+
+# Day 3 – Salesforce Data Modeling and Business Logic
+
+## Topics Covered
+- Objects, Fields, and Records
+- Standard vs Custom Objects
+- Relationships in Salesforce
+- Lookup Relationships
+- Formula Fields
+- Validation Rules
+- Data Modeling Basics
+
+---
+
+## Key Learnings
+- Objects store business data.
+- Fields store specific information.
+- Records represent individual entries.
+- Relationships connect business data.
+- Formula Fields automate calculations.
+- Validation Rules improve data quality.
+
+---
+
+## Relationships in Salesforce
+
+### Lookup Relationship
+Used when objects are related but not fully dependent.
+
+Examples:
+- Student → Department
+- Course → Faculty
+
+---
+
+## Formula Fields
+
+Formula Fields automatically calculate values.
+
+### Examples
+- Percentage
+- Remaining Seats
+- Full Name
+
+---
+
+## Validation Rules
+
+Validation Rules prevent invalid data entry.
+
+### Examples
+- Age cannot be negative
+- Email cannot be blank
+- Seats cannot exceed capacity
+
+---
+
+## Trailhead Modules Completed
+- Data Modeling
+- Formulas and Validations
+
+---
+
+# Day 4 – Salesforce Automation and Flows
+
+## Topics Covered
+- Automation Basics
+- Salesforce Flow Builder
+- Types of Flows
+- Workflow Automation
+- No-Code Automation
+
+---
+
+## Key Learnings
+- Automation reduces manual work.
+- Flow Builder automates processes without coding.
+- Different flows solve different business requirements.
+- Automation improves productivity and efficiency.
+
+---
+
+## Types of Flows
+
+### Screen Flow
+Used for user interaction.
+
+### Record-Triggered Flow
+Runs automatically when records change.
+
+### Scheduled Flow
+Runs at scheduled times.
+
+### Autolaunched Flow
+Runs automatically in the background.
+
+---
+
+## Real-World Workflow Examples
+
+### Student Admission Automation
+- Record creation
+- Confirmation email
+- Admin notification
+
+### Fee Reminder Automation
+- Scheduled reminders
+- Daily checks
+- Automated reports
+
+---
+
+## Trailhead Modules Completed
+- Flow Builder Basics
+- Automation Basics
+
+---
+
+# Day 5 – Introduction to Apex and Business Logic
+
+## Topics Covered
+- Introduction to Apex
+- Declarative vs Programmatic Development
+- Flow vs Apex
+- Business Logic Design
+- Enterprise Automation
+
+---
+
+## Key Learnings
+- Apex is Salesforce’s programming language.
+- Apex handles advanced automation.
+- Enterprise systems require programming logic.
+- Flows are useful for simple automation.
+- Apex is better for complex business logic.
+
+---
+
+## Real Examples Where Apex is Needed
 
 ### Complex Fee Calculation
-Fee calculation may depend on:
-- Scholarship
-- Hostel facility
-- Transport
-- Attendance
-- Previous dues
-
-This type of complex logic is better handled using Apex.
-
----
+Uses multiple conditions and calculations.
 
 ### Payment Gateway Integration
-External integrations such as:
-- Razorpay
-- PhonePe
-- Online payment verification
-
-require Apex because they involve:
-- API communication
-- Authentication
-- External system handling
-
----
+Requires APIs and external communication.
 
 ### Eligibility Checking System
-Student eligibility may depend on:
-- Attendance percentage
-- Internal marks
-- Pending fee status
-- Course prerequisites
-
-This type of multi-condition logic becomes easier to manage using Apex programming.
+Checks attendance, marks, and fee status together.
 
 ---
 
-## SOQL and Apex Trigger Understanding
+## Pseudocode Examples
 
-As part of Day 6 learning, I understood how Salesforce retrieves records using SOQL and how Apex Triggers help enterprise systems react automatically to business events.
+```text
+IF attendance < 75%
+THEN notify student
+```
 
-### What I Learned
-- SOQL is used to retrieve Salesforce data
-- Apex Triggers automate actions when records change
-- Before Triggers are mainly used for validation
-- After Triggers are mainly used for automation
-- Event-driven systems improve enterprise automation
-- Platform Events support real-time communication
-- CLI tools improve development productivity
+```text
+IF seats are full
+THEN block registration
+```
 
 ---
 
-## Example SOQL Queries
+## Trailhead Modules Completed
+- Apex & .NET Basics
+- Apex Basics & Database
 
-### Retrieve all students
+---
+
+# Day 6 – SOQL, Apex Triggers, and Event-Driven Systems
+
+## Topics Covered
+- SOQL Basics
+- Salesforce Query Language
+- Apex Triggers
+- Before vs After Trigger
+- Flow vs Trigger
+- Event-Driven Systems
+- Platform Events
+- Search Systems
+- CLI Basics
+
+---
+
+## Key Learnings
+- SOQL is used to retrieve Salesforce records.
+- Apex Triggers automate actions when data changes.
+- Before Triggers are used for validation.
+- After Triggers are used for automation.
+- Event-driven systems improve enterprise automation.
+- Platform Events support real-time communication.
+- CLI tools improve developer productivity.
+
+---
+
+## What is SOQL?
+
+SOQL stands for Salesforce Object Query Language.
+
+It is used to retrieve data from Salesforce objects.
+
+### Example
 
 ```sql
 SELECT Name FROM Student__c
 ```
 
-### Find students with attendance below 75%
-
 ```sql
-SELECT Name, Attendance__c
+SELECT Name
 FROM Student__c
 WHERE Attendance__c < 75
 ```
 
-### Find students with pending fees
+---
 
-```sql
-SELECT Name
-FROM Student__c
-WHERE Fee_Status__c = 'Pending'
-```
+## What is an Apex Trigger?
+
+An Apex Trigger is code that runs automatically when records are inserted, updated, or deleted.
+
+Triggers help automate business processes.
 
 ---
 
-## Apex Trigger Examples
+## Trigger Events
 
-### Before Trigger Example
+| Trigger Event | Description |
+|---|---|
+| Before Insert | Runs before saving |
+| After Insert | Runs after saving |
+| Before Update | Runs before updating |
+| After Update | Runs after updating |
+
+---
+
+## Before Trigger Example
 
 ```apex
 trigger StudentBeforeTrigger on Student__c (before insert) {
@@ -239,11 +476,9 @@ trigger StudentBeforeTrigger on Student__c (before insert) {
 }
 ```
 
-This trigger validates student age before saving the record.
-
 ---
 
-### After Trigger Example
+## After Trigger Example
 
 ```apex
 trigger StudentAfterTrigger on Student__c (after insert) {
@@ -257,165 +492,263 @@ trigger StudentAfterTrigger on Student__c (after insert) {
 }
 ```
 
-This trigger runs automatically after student record creation.
-
 ---
 
-## Event-Driven System Examples
+## Platform Events
 
-### Student Registration Event
-- Student registers
-- Welcome email gets sent
-- Admin receives notification
+Platform Events allow systems to communicate automatically in real time.
 
-### Fee Payment Event
-- Payment status updates automatically
-- Receipt gets generated
-- Student portal refreshes
-
-### Attendance Warning Event
-- Attendance drops below 75%
-- Warning notification gets triggered
-
-These examples helped me understand how enterprise systems automate business operations using event-driven architecture.
-
----
-
-## Declarative vs Programmatic Development
-
-| Declarative Development | Programmatic Development |
-|---|---|
-| Uses clicks instead of code | Uses programming logic |
-| Easier to maintain | More flexible |
-| Faster implementation | Suitable for advanced requirements |
-| Used for simple automation | Used for enterprise-level logic |
-
----
-
-## Flow vs Apex
-
-| Flow | Apex |
-|---|---|
-| No-code automation | Code-based development |
-| Easier to build | Requires programming knowledge |
-| Best for simple workflows | Best for advanced business logic |
-| Limited flexibility | Highly flexible |
-| Faster for small automation | Better for enterprise systems |
-
----
-
-## Before Trigger vs After Trigger
-
-| Before Trigger | After Trigger |
-|---|---|
-| Runs before saving records | Runs after saving records |
-| Used for validation | Used for automation |
-| Can modify values before save | Used for notifications |
-
----
-
-## Search Systems Understanding
-
-Search systems help users quickly retrieve records from enterprise applications.
-
-### Importance of Search Systems
-- Saves time
-- Improves productivity
-- Improves user experience
-- Helps manage large-scale data efficiently
-
----
-
-## Platform Events Understanding
-
-Platform Events support automatic communication between systems in real time.
-
-### Real-World Example
-When a student completes fee payment:
-- Finance records update automatically
+### Example
+When a student completes payment:
+- Finance records update
 - Receipt gets generated
 - Notification gets sent
-- Student dashboard refreshes
 
 ---
 
-## CLI Basics
-
-CLI stands for Command-Line Interface.
-
-Developers use CLI tools to:
-- Execute commands faster
-- Automate development tasks
-- Improve workflow efficiency
-- Manage projects more efficiently
-
----
-
-## Trailhead Modules
-- Salesforce Values: Quick Look
-- Salesforce Developer: Quick Look
-- Salesforce CRM
-- Trailhead Playground Management
-- Agentforce 360 Platform Basics
-- Agentforce 360 Platform Development Basics
-- Data Modeling
-- Formulas and Validations
-- Flow Builder Basics
-- Automation Basics
-- Apex & .NET Basics
-- Apex Basics & Database
+## Trailhead Modules Completed
 - Search Solution Basics
 - Agentforce 360 Platform Events Basics
 - Command-Line Interface Basics
 
 ---
 
-## Tools Used
-- Salesforce Trailhead
-- Salesforce Developer Edition
-- GitHub
-- VS Code
+# Day 7 – Apex Testing, Asynchronous Apex, and Salesforce DX
+
+## Topics Covered
+- Apex Testing
+- Test Classes
+- Test Coverage
+- Asynchronous Apex
+- Future Methods
+- Queueable Apex
+- Batch Apex
+- Scheduled Apex
+- Salesforce DX
+- Enterprise Workflow Design
 
 ---
 
 ## Key Learnings
-- Salesforce is a cloud-based CRM platform used by businesses worldwide.
-- CRM helps organizations manage customer relationships efficiently.
-- Objects are used to store data in Salesforce.
-- Fields store specific information inside objects.
-- Records represent individual entries inside objects.
-- Apps help organize related business functionalities.
-- Tabs improve navigation and accessibility.
-- Relationships connect related business data.
-- Formula Fields automate repetitive calculations.
-- Validation Rules help prevent invalid data entry.
-- Salesforce Flow Builder helps automate business processes.
-- Different types of Flows are used for different automation requirements.
-- No-code automation reduces manual work and improves productivity.
-- Apex is Salesforce’s programming language for advanced business logic.
-- SOQL is used for querying Salesforce data.
-- Apex Triggers automate actions when records change.
-- Event-driven systems improve enterprise automation.
-- Platform Events support real-time communication.
-- CLI tools improve developer productivity.
-- Enterprise systems eventually require programming for scalability and flexibility.
-- Salesforce supports both no-code configuration and coding-based customization.
-- Multi-tenant architecture allows multiple organizations to share the same infrastructure securely.
-- Salesforce Developers use Apex, APIs, Lightning Components, SOQL, and automation tools to extend functionality.
+- Testing ensures system reliability and bug-free deployment.
+- Salesforce requires minimum test coverage for deployment.
+- Asynchronous Apex improves scalability and performance.
+- Future, Queueable, Batch, and Scheduled Apex handle background processing.
+- Salesforce DX improves development workflow and collaboration.
 
 ---
 
-## Overall Learning
-This program helped me understand Salesforce fundamentals, CRM workflow, Salesforce objects, apps, tabs, fields, records, relationships, platform architecture, automation concepts, Apex programming basics, SOQL querying, Apex Triggers, event-driven systems, and the difference between configuration and coding.
+## Why Testing Matters
 
-I also learned how businesses use Salesforce to:
-- Manage customer relationships
-- Automate business processes
-- Maintain structured enterprise data
-- Build scalable applications
-- Implement advanced business logic
-- Integrate external systems
-- Use event-driven automation
-- Design enterprise-level solutions
+Testing is important because it:
+- Ensures business logic works correctly
+- Reduces bugs and errors
+- Improves deployment quality
+- Maintains system stability
+- Helps enterprise applications scale safely
 
-Through Trailhead practice and assignments, I improved my understanding of how Salesforce works internally and how developers and administrators work together to build efficient business solutions using both declarative tools and programmatic development.
+Salesforce requires at least 75% test coverage for Apex deployment.
+
+---
+
+## Example Test Class
+
+```apex
+@isTest
+private class StudentTriggerTest {
+
+    @isTest
+    static void testStudentInsert() {
+
+        Student__c stu = new Student__c(
+            Name = 'Priya',
+            Age__c = 20
+        );
+
+        insert stu;
+
+        Student__c result = [
+            SELECT Name, Age__c
+            FROM Student__c
+            WHERE Name = 'Priya'
+            LIMIT 1
+        ];
+
+        System.assertEquals(20, result.Age__c);
+
+    }
+
+}
+```
+
+---
+
+## What is Asynchronous Apex?
+
+Asynchronous Apex allows operations to run in the background instead of executing immediately.
+
+### Advantages
+- Better performance
+- Faster processing
+- Handles large data volumes
+- Improves scalability
+
+---
+
+## Types of Asynchronous Apex
+
+### Future Methods
+Used for lightweight background processing.
+
+### Queueable Apex
+Used for advanced background jobs.
+
+### Batch Apex
+Processes large amounts of records in batches.
+
+### Scheduled Apex
+Runs jobs automatically at scheduled times.
+
+---
+
+## What is Salesforce DX?
+
+Salesforce DX is a modern development environment used for Salesforce application development.
+
+### Advantages
+- Better collaboration
+- Version control integration
+- Faster deployments
+- Improved development workflow
+- Better project management
+
+---
+
+## Complete Enterprise Workflow
+
+### Student Registration Workflow
+
+#### Step 1 – Student Registration
+- Student submits registration form
+- Record gets created automatically
+
+#### Step 2 – Validation
+- System validates:
+  - Age
+  - Email
+  - Required fields
+
+#### Step 3 – Automation
+- Confirmation email gets sent
+- Admin receives notification
+
+#### Step 4 – Attendance Tracking
+- Attendance records update automatically
+
+#### Step 5 – Fee Management
+- Fee reminders get triggered
+
+#### Step 6 – Eligibility Verification
+System checks:
+- Attendance percentage
+- Pending fees
+- Internal marks
+
+#### Step 7 – Exam Registration
+Eligible students can register for exams.
+
+---
+
+## Important Test Cases
+
+### Test Case 1 – Negative Age Validation
+
+Input:
+- Age = -5
+
+Expected Result:
+- Record should not save
+
+---
+
+### Test Case 2 – Attendance Warning
+
+Input:
+- Attendance below 75%
+
+Expected Result:
+- Warning notification should trigger
+
+---
+
+### Test Case 3 – Fee Pending Validation
+
+Input:
+- Fee status = Pending
+
+Expected Result:
+- Exam registration should be blocked
+
+---
+
+### Test Case 4 – Successful Student Registration
+
+Input:
+- Valid student details
+
+Expected Result:
+- Record gets created successfully
+
+---
+
+## Reflection – Why Enterprise Software Needs Structured Workflows
+
+Enterprise software systems handle large-scale business operations involving thousands of users, records, workflows, and transactions.
+
+Without structured workflows:
+- Data becomes inconsistent
+- Automation becomes difficult
+- Errors increase
+- Scalability becomes challenging
+
+Structured workflows help organizations:
+- Maintain consistency
+- Improve automation
+- Reduce errors
+- Improve scalability
+- Support enterprise-level operations efficiently
+
+---
+
+## Trailhead Modules Completed
+- Apex Testing
+- Asynchronous Apex
+- Salesforce DX Basics
+
+---
+
+# Tools Used
+- Salesforce Trailhead
+- Salesforce Developer Edition
+- GitHub
+- VS Code
+- Salesforce CLI
+
+---
+
+# Overall Learning
+
+This Salesforce Summer Training Program helped me build a strong foundation in:
+- CRM concepts
+- Salesforce Platform
+- Data modeling
+- Automation
+- Apex programming
+- SOQL querying
+- Apex Triggers
+- Event-driven systems
+- Testing strategies
+- Salesforce DX
+- Enterprise application development
+
+Through Trailhead practice, assignments, and mini-projects, I improved my understanding of how Salesforce developers and administrators work together to build scalable, secure, and efficient enterprise business solutions.
