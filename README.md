@@ -1,365 +1,230 @@
 <div align="center">
 
-  <img 
-    src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" 
-    alt="Salesforce Banner"
-    width="180"
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg"
+    alt="Salesforce Logo"
+    width="190"
   />
 
-# 🚀 Salesforce Summer Training Program
+# Salesforce Summer Training Program
 
-### Building Enterprise Solutions using Salesforce CRM, Apex, LWC, APIs, Automation, Security, and AI Technologies
+### A consolidated learning portfolio covering Salesforce CRM, automation, Apex, LWC, integrations, security, testing, deployment, and enterprise data practices.
+
+![Salesforce](https://img.shields.io/badge/Salesforce-CRM-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white)
+![Apex](https://img.shields.io/badge/Apex-Development-1798C1?style=for-the-badge)
+![LWC](https://img.shields.io/badge/LWC-Frontend-2E844A?style=for-the-badge)
+![Trailhead](https://img.shields.io/badge/Trailhead-Learning-032D60?style=for-the-badge)
 
 </div>
 
 ---
 
-# Overview
+## Portfolio Overview
 
-This repository contains my learning journey, hands-on practice, notes, assignments, mini-projects, and workflow implementations completed during the Salesforce Summer Training Program.
+This repository documents my Salesforce Summer Training journey through daily notes, hands-on tasks, Trailhead progress, examples, screenshots, and enterprise-style mini-project thinking.
 
-The training focused on understanding Salesforce CRM, automation, Apex programming, APIs, Lightning Web Components (LWC), security models, integrations, testing strategies, Salesforce DX, and enterprise application development using real-world business scenarios.
+The training focuses on how real Salesforce applications are designed: starting from CRM fundamentals and data modeling, then moving into automation, Apex programming, Lightning Web Components, APIs, security, testing, deployment workflows, and data governance.
+
+## Learning Roadmap
+
+| Phase | Focus Area | Outcome |
+|---|---|---|
+| Foundation | CRM, cloud platform, objects, fields, records | Understand Salesforce as an enterprise CRM platform |
+| Configuration | Apps, tabs, validation rules, formulas, flows | Build no-code business automation |
+| Development | Apex, SOQL, SOSL, triggers, async Apex | Write backend logic for advanced requirements |
+| Frontend | Lightning Web Components | Build reusable Salesforce UI components |
+| Integration | REST APIs, JSON, HTTP callouts | Connect Salesforce with external systems |
+| Security | Profiles, permission sets, sharing rules | Protect data with layered access control |
+| Delivery | Testing, Salesforce DX, GitHub, deployment | Follow a structured development workflow |
+| Governance | Data quality, migration, duplicate prevention | Think like an enterprise data owner |
 
 ---
 
-# Topics Covered
-
-## Salesforce Fundamentals
-- Salesforce CRM
-- Cloud Computing
-- Multi-Tenant Architecture
-- Salesforce Platform
-- Admin vs Developer
-
----
-
-## CRM Concepts
-- Leads
-- Accounts
-- Contacts
-- Opportunities
-- Customer Lifecycle
-- Business Workflow
+## Repository Structure
 
 ```text
-Lead → Contact → Opportunity → Customer
+salesforce-training/
+|-- README.md
+|-- week-1/
+|   |-- README.md
+|   |-- day-1/
+|   |-- Day-2/
+|   |-- Day-3/
+|   |-- Day-4/
+|   |-- Day-5/
+|   |-- Day-6/
+|   `-- Day-7/
+|-- week-2/
+|   |-- README.md
+|   |-- Day-1/
+|   |-- Day-2/
+|   |-- Day-3/
+|   |-- Day-4/
+|   |-- Day-5/
+|   |-- Day-6/
+|   `-- day-7/
+`-- week-3/
+    `-- Day-1/
 ```
 
+## Weekly Highlights
+
+### Week 1: Salesforce Foundations
+
+[Open Week 1 README](./week-1/README.md)
+
+Week 1 built the base of Salesforce development. It covered CRM concepts, platform architecture, apps, objects, relationships, validation rules, formulas, Flow Builder, Apex basics, SOQL, triggers, testing, asynchronous Apex, Salesforce DX, and command-line workflows.
+
+| Day | Main Focus |
+|---|---|
+| Day 1 | CRM basics, Leads, Accounts, Contacts, Opportunities |
+| Day 2 | Salesforce platform, apps, objects, tabs, multi-tenant architecture |
+| Day 3 | Data modeling, relationships, formulas, validation rules |
+| Day 4 | Flow Builder and no-code automation |
+| Day 5 | Apex basics and business logic |
+| Day 6 | SOQL, Apex triggers, platform events, CLI basics |
+| Day 7 | Apex testing, async Apex, Salesforce DX |
+
+### Week 2: Full-Stack Salesforce Development
+
+[Open Week 2 README](./week-2/README.md)
+
+Week 2 expanded into frontend, backend, integration, security, testing, and deployment. The focus moved from understanding the platform to building complete enterprise-style Salesforce solutions.
+
+| Day | Main Focus |
+|---|---|
+| Day 8 | Lightning Web Components basics |
+| Day 9 | LWC events, parent-child communication, rendering |
+| Day 10 | Apex classes, methods, controllers, backend logic |
+| Day 11 | REST APIs, HTTP callouts, JSON handling |
+| Day 12 | Security model, profiles, permission sets, sharing rules |
+| Day 13 | Apex testing, debugging, assertions, code coverage |
+| Day 14 | Async Apex, deployment, Salesforce DX, GitHub workflow |
+
+### Week 3: Data Management and Governance
+
+[Open Week 3 Day 1 README](./week-3/Day-1/README.md)
+
+Week 3 begins with enterprise data thinking: data management, data quality, migration challenges, duplicate prevention, bulk import risks, and governance practices.
+
+| Day | Main Focus |
+|---|---|
+| Day 15 | Data management, Data Loader, data quality, migration, governance |
+
 ---
 
-## Data Modeling
-- Apps, Objects, Tabs
-- Fields & Records
-- Standard vs Custom Objects
-- Lookup & Master-Detail Relationships
-- Formula Fields
-- Validation Rules
+## Core Skills Practiced
+
+| Category | Skills |
+|---|---|
+| CRM | Leads, Accounts, Contacts, Opportunities, customer lifecycle |
+| Data Modeling | Standard objects, custom objects, fields, records, lookup relationships |
+| Automation | Screen flows, record-triggered flows, scheduled flows, validation rules |
+| Apex | Classes, methods, triggers, collections, exceptions, async processing |
+| Querying | SOQL, SOSL, filtering, record retrieval |
+| LWC | Templates, JavaScript controllers, events, reactive properties |
+| Integration | REST concepts, HTTP methods, callouts, JSON |
+| Security | Profiles, permission sets, roles, sharing rules, field-level security |
+| Testing | Apex test classes, assertions, test coverage, debug logs |
+| Deployment | Salesforce DX, CLI, Git, GitHub, sandbox workflow |
+| Data Governance | Data quality, duplicate rules, migration planning, bulk import risks |
 
 ---
 
-## Automation
-- Flow Builder
-- Screen Flow
-- Record-Triggered Flow
-- Scheduled Flow
-- Workflow Automation
-- No-Code Development
+## Mini Project Theme: College Management System
 
----
+The learning examples are connected through a practical College Management System scenario.
 
-## Apex Programming
-- Apex Basics
-- Classes & Methods
-- OOP Concepts
-- Exception Handling
-- Collections
-- Business Logic Development
+### Business Objects
 
-### Example
+| Salesforce Object | Real-World Example |
+|---|---|
+| Lead | Student inquiry |
+| Account | College or institution |
+| Contact | Student |
+| Opportunity | Admission process |
+| Custom Object | Student, Faculty, Department, Course, Attendance, Fees, Examination |
 
-```apex
-public class StudentManager {
+### Workflow
 
-    public static String getMessage() {
-
-        return 'Welcome Student';
-
-    }
-
-}
+```text
+Student Inquiry
+    -> Registration
+    -> Validation Rules
+    -> Flow or Apex Automation
+    -> Confirmation Notification
+    -> Attendance Tracking
+    -> Fee Management
+    -> Eligibility Verification
+    -> Exam Registration
 ```
 
----
+## Sample Concepts
 
-## Database & Querying
-- SOQL
-- SOSL
-- Query Optimization
-- Data Retrieval
-
-### Example SOQL Query
+### SOQL Query
 
 ```sql
-SELECT Name
+SELECT Name, Attendance__c
 FROM Student__c
 WHERE Attendance__c < 75
 ```
 
----
-
-## Apex Triggers
-- Before Triggers
-- After Triggers
-- Trigger Events
-- Trigger Context Variables
-- Event-Driven Systems
-
-### Example Trigger
+### Apex Trigger
 
 ```apex
 trigger StudentTrigger on Student__c (before insert) {
-
-    for(Student__c stu : Trigger.new) {
-
-        if(stu.Age__c < 0) {
-
-            stu.addError('Age cannot be negative');
-
+    for (Student__c student : Trigger.new) {
+        if (student.Age__c < 0) {
+            student.addError('Age cannot be negative');
         }
-
     }
-
 }
 ```
 
----
-
-## APIs & Integrations
-- REST API
-- SOAP API
-- HTTP Callouts
-- JSON Handling
-- Third-Party Integrations
-
-### Example HTTP Callout
-
-```apex
-Http http = new Http();
-
-HttpRequest req = new HttpRequest();
-
-req.setEndpoint('https://api.example.com');
-
-req.setMethod('GET');
-
-HttpResponse res = http.send(req);
-
-System.debug(res.getBody());
-```
-
----
-
-## Lightning Web Components (LWC)
-- HTML Templates
-- JavaScript Controllers
-- Event Handling
-- Reactive Properties
-- Component Communication
-
-### Example LWC
+### LWC Component
 
 ```html
 <template>
-
-    <h1>Hello Salesforce</h1>
-
+    <lightning-card title="Student Portal">
+        <p>Welcome to Salesforce Training</p>
+    </lightning-card>
 </template>
 ```
 
-```javascript
-import { LightningElement } from 'lwc';
-
-export default class HelloWorld extends LightningElement {
-
-}
-```
-
 ---
 
-## Security & Access Management
-- Profiles
-- Roles
-- Permission Sets
-- Sharing Rules
-- Field-Level Security
-- Organization-Wide Defaults
-
----
-
-## Testing & Deployment
-- Apex Testing
-- Test Classes
-- Test Coverage
-- Debugging
-- Salesforce DX
-- GitHub Integration
-- Deployment Strategies
-
----
-
-## Asynchronous Apex
-- Future Methods
-- Queueable Apex
-- Batch Apex
-- Scheduled Apex
-
----
-
-# Week 1 Summary
-
-### Day 1
-- Salesforce CRM Basics
-- Leads, Accounts, Contacts, Opportunities
-
-### Day 2
-- Apps, Objects, Tabs
-- Multi-Tenant Architecture
-
-### Day 3
-- Data Modeling
-- Relationships
-- Validation Rules
-
-### Day 4
-- Flow Builder
-- Automation & Workflows
-
-### Day 5
-- Apex Basics
-- Business Logic
-
-### Day 6
-- SOQL
-- Apex Triggers
-- Platform Events
-
-### Day 7
-- Apex Testing
-- Salesforce DX
-- Asynchronous Apex
-
----
-
-# Week 2 Summary
-
-### Day 8
-- Apex Classes
-- OOP Concepts
-
-### Day 9
-- Collections
-- Exception Handling
-
-### Day 10
-- APIs & Integrations
-- HTTP Callouts
-
-### Day 11
-- Lightning Web Components
-- UI Development
-
-### Day 12
-- Parent-Child Communication
-- Reactive Properties
-
-### Day 13
-- Security & Access Management
-- Sharing Rules
-
-### Day 14
-- Deployment Process
-- Sandbox & GitHub Workflow
-
----
-
-# Real-World Mini Project
-
-## College Management System
-
-### Objects Used
-- Student
-- Faculty
-- Department
-- Course
-- Attendance
-- Fees
-- Examination
-
----
-
-## Workflow
-
-```text
-Student Registration
-        ↓
-Validation Rules
-        ↓
-Automation Trigger
-        ↓
-Confirmation Email
-        ↓
-Attendance Tracking
-        ↓
-Fee Management
-        ↓
-Eligibility Verification
-        ↓
-Exam Registration
-```
-
----
-
-# Tools Used
+## Tools and Platforms
 
 - Salesforce Trailhead
 - Salesforce Developer Edition
-- VS Code
+- Salesforce Data Loader
+- Visual Studio Code
 - Salesforce CLI
-- GitHub
+- Git and GitHub
 
----
-
-# Trailhead Modules Completed
+## Trailhead Learning Areas
 
 - Salesforce CRM
+- Platform Basics
 - Data Modeling
-- Automation Basics
-- Apex Basics & Database
+- Formulas and Validations
+- Flow Builder
+- Apex Basics and Database
+- Apex Triggers
 - Apex Testing
 - Asynchronous Apex
-- Salesforce DX Basics
-- Platform Events Basics
+- Salesforce DX
+- Platform Events
 - API Basics
-- LWC Basics
+- Lightning Web Components
 - Security Basics
+- Data Management
+- Data Quality
 
 ---
 
-# Overall Learning
+## Key Takeaways
 
-This Salesforce Summer Training Program helped me build strong knowledge in:
+This training helped me understand how Salesforce supports complete enterprise application development. I practiced both declarative and programmatic approaches, learned how data moves through CRM workflows, built logic using Apex and Flow, explored LWC for UI development, studied integration patterns, and understood why testing, security, deployment, and data quality matter in real-world systems.
 
-- Salesforce CRM
-- Data Modeling
-- Automation
-- Apex Programming
-- SOQL & SOSL
-- Apex Triggers
-- APIs & Integrations
-- Lightning Web Components
-- Security & Access Management
-- Testing & Deployment
-- Salesforce DX
-- Enterprise Application Development
-
-Through hands-on activities, mini-projects, and workflow implementations, I improved my understanding of how enterprise applications are built using Salesforce technologies.
+The repository represents a growing Salesforce learning portfolio: part study journal, part hands-on lab, and part enterprise application design practice.
