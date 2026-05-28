@@ -1,4 +1,4 @@
-# 🛠️ Day 16 — Debugging, Developer Tools & Best Practices
+#  Day 16 — Debugging, Developer Tools & Best Practices
 ### Salesforce Summer Program | Enterprise Systems Thinking
 
 ---
@@ -7,19 +7,19 @@
 
 ---
 
-## 📌 What I Learned Today
+##  What I Learned Today
 
 Today's focus was on thinking like a real-world Salesforce engineer:
 
-- 🔍 Diagnosing and fixing bugs using **Apex Replay Debugger**
-- 🖥️ Mastering the **Developer Console** for logs, queries, and execution
-- ⚡ Writing **LWC Best Practices** for clean, performant components
-- 📈 Thinking about **performance at scale**
-- 🏗️ Understanding why **maintainable architecture** matters
+-  Diagnosing and fixing bugs using **Apex Replay Debugger**
+-  Mastering the **Developer Console** for logs, queries, and execution
+-  Writing **LWC Best Practices** for clean, performant components
+-  Thinking about **performance at scale**
+-  Understanding why **maintainable architecture** matters
 
 ---
 
-## 🐛 Task 1 — Bug Analysis: Real Scenarios, Real Debugging
+##  Task 1 — Bug Analysis: Real Scenarios, Real Debugging
 
 ### Scenario A: Duplicate Notifications
 **Problem:** Users receive the same notification multiple times.
@@ -69,7 +69,7 @@ Today's focus was on thinking like a real-world Salesforce engineer:
 
 ---
 
-## ⚙️ Task 2 — Performance Thinking at Scale
+##  Task 2 — Performance Thinking at Scale
 
 > Imagine 50,000 users are using the system simultaneously. What breaks?
 
@@ -85,7 +85,7 @@ Today's focus was on thinking like a real-world Salesforce engineer:
 
 ---
 
-## 🏗️ Task 3 — Maintainability Thinking
+##  Task 3 — Maintainability Thinking
 
 ### Why Write Modular, Reusable, Debuggable Code?
 
@@ -106,7 +106,7 @@ A shortcut that skips validation today becomes a production incident tomorrow. E
 
 ---
 
-## 💭 Task 4 — Reflection
+##  Task 4 — Reflection
 
 ### Why is Debugging One of the Most Important Skills in Software Engineering?
 
@@ -127,25 +127,25 @@ A developer who can debug well is a developer who can be trusted with real syste
 
 ---
 
-## 📚 LWC Best Practices Summary
+##  LWC Best Practices Summary
 
 ```javascript
-// ✅ Use @wire for data — cached, reactive, efficient
+//  Use @wire for data — cached, reactive, efficient
 @wire(getRecord, { recordId: '$recordId', fields: FIELDS })
 record;
 
-// ✅ Break big components into small ones
+//  Break big components into small ones
 // parent.html
 <c-child-component data={record}></c-child-component>
 
-// ✅ Use getters for derived values — keep templates clean
+//  Use getters for derived values — keep templates clean
 get formattedName() {
     return this.record?.fields?.Name?.value ?? 'Unknown';
 }
 
-// ❌ Avoid imperative Apex calls when @wire works
-// ❌ Don't store API responses directly in arrays without error handling
-// ❌ Don't manipulate the DOM directly — let the framework handle it
+//  Avoid imperative Apex calls when @wire works
+//  Don't store API responses directly in arrays without error handling
+//  Don't manipulate the DOM directly — let the framework handle it
 ` ` `
 
 **Principles:**
@@ -156,7 +156,7 @@ get formattedName() {
 
 ---
 
-## 🔗 Resources
+##  Resources
 
 | Resource | Link |
 |---|---|
@@ -167,7 +167,7 @@ get formattedName() {
 
 ---
 
-## ✍️ Revision Questions & Answers
+##  Revision Questions & Answers
 
 **1. Why are debug logs important?**
 They give you a timestamped record of exactly what ran, in what order, with what values — without needing to reproduce the issue live.
