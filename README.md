@@ -63,8 +63,12 @@ salesforce-training/
 |   |-- Day-5/
 |   |-- Day-6/
 |   `-- day-7/
-`-- week-3/
-    `-- Day-1/
+|-- week-3/
+|   |-- Day-1/
+|   |-- Day-2/
+|   |-- Day-3/
+|   |-- Day-4/
+|   |-- Day-5/
 ```
 
 ## Weekly Highlights
@@ -105,12 +109,20 @@ Week 2 expanded into frontend, backend, integration, security, testing, and depl
 
 [Open Week 3 Day 1 README](./week-3/Day-1/README.md)
 
-Week 3 begins with enterprise data thinking: data management, data quality, migration challenges, duplicate prevention, bulk import risks, and governance practices.
+| Debugging | Debug logs, Apex Replay Debugger, Developer Console, troubleshooting |
+| Enterprise Engineering | Performance optimization, monitoring, maintainability, reliability |
+| AI & Agentforce | AI agents, Agentforce, prompt workflows, AI governance |
+| Architecture | System design, workflow integration, scalability planning |
+| Analytics | Reports, dashboards, management insights |
+| Project Design | End-to-end application architecture, approval workflows, failure handling |
 
 | Day | Main Focus |
 |---|---|
 | Day 15 | Data management, Data Loader, data quality, migration, governance |
-
+| Day 16 | Debugging, Developer Console, Apex Replay Debugger, LWC best practices |
+| Day 17 | Agentforce, AI agents, AI workflows, AI governance |
+| Day 18 | Final Project Phase 1, architecture design, workflow integration |
+| Day 19 | Final Project Phase 2, scalability, analytics, architecture refinement |
 ---
 
 ## Core Skills Practiced
@@ -158,6 +170,18 @@ Student Inquiry
     -> Eligibility Verification
     -> Exam Registration
 ```
+### Enterprise Enhancements
+
+The College Management System was progressively enhanced using enterprise-level Salesforce concepts:
+
+- Validation Rules for student registration
+- Approval workflows for admissions and fee requests
+- Apex automation for business logic
+- Lightning Web Components for user interfaces
+- Reports and dashboards for management insights
+- Scalability planning for high-volume usage
+- AI-powered enhancements using Agentforce concepts
+- Failure-handling and monitoring strategies
 
 ## Sample Concepts
 
@@ -220,6 +244,16 @@ trigger StudentTrigger on Student__c (before insert) {
 - Security Basics
 - Data Management
 - Data Quality
+-  Apex Replay Debugger
+- Developer Console
+- Lightning Web Component Best Practices
+- Agentforce Fundamentals
+- AI Agents and Prompt Workflows
+- Enterprise Debugging
+- Solution Architecture
+- Scalability and Performance
+- Reporting and Dashboards
+- Enterprise Application Design
 
 ---
 
@@ -227,4 +261,6 @@ trigger StudentTrigger on Student__c (before insert) {
 
 This training helped me understand how Salesforce supports complete enterprise application development. I practiced both declarative and programmatic approaches, learned how data moves through CRM workflows, built logic using Apex and Flow, explored LWC for UI development, studied integration patterns, and understood why testing, security, deployment, and data quality matter in real-world systems.
 
-The repository represents a growing Salesforce learning portfolio: part study journal, part hands-on lab, and part enterprise application design practice.
+As the program progressed, I expanded into enterprise debugging, performance optimization, maintainable architecture, Agentforce, AI-powered workflows, scalability planning, analytics, reporting, and complete application design. The final project phases emphasized thinking like a Salesforce Developer and Solution Architect rather than focusing only on individual platform features.
+
+The repository represents a growing Salesforce learning portfolio: part study journal, part hands-on lab, part enterprise application design practice, and part exploration of future AI-powered business systems.
