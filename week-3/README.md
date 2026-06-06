@@ -1,147 +1,149 @@
-# Week 3: Enterprise Engineering, AI & Solution Architecture
+# Salesforce Summer Training Program – Week 3
 
-## Overview
+### Enterprise Data Management, Debugging, Agentforce AI, Solution Architecture, Scalability, and Enterprise Application Engineering
 
-Week 3 marks the transition from learning Salesforce features to thinking like an enterprise software engineer and solution architect.
-
-This phase focuses on enterprise data management, debugging strategies, AI-powered workflows, system architecture, scalability, analytics, and complete application design. The emphasis shifts from isolated concepts to designing reliable, maintainable, and scalable Salesforce solutions.
+</div>
 
 ---
 
-## Learning Objectives
+# Overview
 
-By the end of Week 3, I was able to:
+This repository contains my complete learning progress, practical tasks, notes, architecture discussions, AI explorations, and enterprise application design activities completed during Week 3 of the Salesforce Summer Training Program.
 
-- Understand enterprise data management and governance
-- Analyze data migration and data quality challenges
-- Use debugging tools and troubleshooting approaches
-- Apply Lightning Web Component best practices
-- Explore Agentforce and AI-powered enterprise workflows
-- Design complete Salesforce application architectures
-- Think about scalability, reliability, and maintainability
-- Create reporting and analytics strategies
-- Refine enterprise application designs using solution architecture principles
+During this week, I explored enterprise data management, governance, debugging strategies, performance optimization, Agentforce, AI-powered workflows, solution architecture, scalability planning, reporting, analytics, and complete Salesforce application design.
+
+This week helped me understand how enterprise systems are built, maintained, monitored, scaled, and enhanced using modern Salesforce development practices.
 
 ---
 
-# Day 15 – Data Management & Governance
+# Topics Covered in Week 3
+
+- Data Management
+- Data Migration
+- Data Loader
+- Data Quality
+- Duplicate Prevention
+- Enterprise Governance
+- Debug Logs
+- Apex Replay Debugger
+- Developer Console
+- Error Analysis
+- Performance Optimization
+- LWC Best Practices
+- Maintainable Architecture
+- Agentforce
+- AI Agents
+- Prompt-Driven Workflows
+- AI Governance
+- AI + Flow Integration
+- AI + Apex Integration
+- Enterprise Architecture
+- Workflow Design
+- Approval Processes
+- Scalability Planning
+- Reporting and Analytics
+- Dashboard Design
+- Failure Handling
+- Solution Architecture Thinking
+- Enterprise Engineering Mindset
+
+---
+
+# Day 15 – Data Management and Governance
 
 ## Topics Covered
 
 - Data Import and Export
-- Salesforce Data Loader
+- Data Loader
 - Data Migration
 - Data Quality
 - Duplicate Prevention
 - Enterprise Governance
 
-## Key Concepts
+---
 
-### Data Quality Challenges
+## Key Learnings
 
-Common examples of bad data:
+- Enterprise systems depend on clean and reliable data.
+- Data migration requires careful planning.
+- Duplicate records affect reporting and automation.
+- Validation improves data quality.
+- Governance ensures long-term system reliability.
+
+---
+
+## Data Quality Problems
 
 - Duplicate student records
 - Missing email addresses
-- Incorrect department assignment
 - Invalid attendance values
-- Duplicate course registrations
-- Missing phone numbers
-- Incorrect fee records
-- Inconsistent date formats
-- Invalid examination records
-- Incomplete student profiles
-
-### Data Migration Challenges
-
-When migrating from spreadsheets to Salesforce:
-
-- Duplicate records may exist
-- Missing values create incomplete records
-- Different formatting standards cause issues
-- Invalid records affect automation
-- Relationships may be lost during migration
-- Large datasets require validation before import
-
-### Enterprise Risks of Bad Data
-
-Incorrect data can lead to:
-
-- Wrong notifications
-- Attendance calculation errors
-- Fee management issues
-- Reporting inaccuracies
-- Poor decision-making
-- Reduced trust in the system
-
-### Reflection
-
-Enterprise systems depend heavily on accurate and reliable data. Strong governance, validation rules, duplicate prevention, and migration planning help maintain system integrity and business confidence.
+- Incorrect fee information
+- Wrong department assignments
+- Missing contact information
 
 ---
 
-# Day 16 – Enterprise Debugging & Best Practices
+## Enterprise Risks of Bad Data
+
+- Wrong notifications
+- Reporting errors
+- Incorrect attendance calculations
+- Fee processing issues
+- Poor business decisions
+
+---
+
+# Day 16 – Enterprise Debugging and Best Practices
 
 ## Topics Covered
 
+- Debug Logs
 - Apex Replay Debugger
 - Developer Console
-- Debug Logs
 - Error Analysis
-- Performance Optimization
+- Performance Thinking
 - LWC Best Practices
 - Maintainable Architecture
 
-## Key Concepts
+---
 
-### Enterprise Debugging Workflow
+## Key Learnings
 
-1. Reproduce the issue
-2. Analyze debug logs
-3. Identify the root cause
-4. Verify affected components
-5. Apply a fix
-6. Test thoroughly
-7. Monitor production behavior
-
-### Common Bug Scenarios
-
-- Duplicate notifications
-- Incorrect attendance calculations
-- Flow not triggering
-- Approval process failures
-- Missing record updates
-- Trigger execution errors
-
-### Performance Considerations
-
-For large-scale systems:
-
-- Optimize SOQL queries
-- Reduce unnecessary automation
-- Improve component rendering
-- Minimize database operations
-- Use asynchronous processing where appropriate
-
-### LWC Best Practices
-
-- Build reusable components
-- Keep business logic separate
-- Reduce unnecessary rerendering
-- Follow clean architecture principles
-- Improve maintainability
-
-### Reflection
-
-Debugging is one of the most valuable software engineering skills because it helps developers identify issues, improve reliability, and maintain enterprise systems effectively.
+- Debugging helps identify root causes of issues.
+- Developer Console assists with log analysis.
+- Replay Debugger improves troubleshooting.
+- Reusable components improve maintainability.
+- Performance becomes critical at scale.
 
 ---
 
-# Day 17 – Agentforce & Enterprise AI
+## Common Enterprise Bugs
+
+- Duplicate notifications
+- Flow execution failures
+- Incorrect attendance calculations
+- Approval process issues
+- Trigger execution errors
+
+---
+
+## Enterprise Debugging Workflow
+
+1. Reproduce issue
+2. Collect logs
+3. Analyze execution path
+4. Identify root cause
+5. Fix issue
+6. Retest solution
+7. Monitor production
+
+---
+
+# Day 17 – Agentforce and Enterprise AI
 
 ## Topics Covered
 
-- Agentforce Fundamentals
+- Agentforce
 - AI Agents
 - Agent Builder
 - Prompt-Driven Workflows
@@ -149,39 +151,43 @@ Debugging is one of the most valuable software engineering skills because it hel
 - AI + Apex Integration
 - Enterprise AI Governance
 
-## Key Concepts
+---
 
-### What is Agentforce?
+## Key Learnings
 
-Agentforce enables organizations to build intelligent AI agents capable of understanding requests, retrieving enterprise data, executing actions, and supporting business processes.
+- Agentforce introduces AI-powered enterprise agents.
+- AI agents combine reasoning with actions.
+- AI integrates with Flows and Apex.
+- Governance is essential for enterprise AI.
 
-### AI Use Cases
+---
 
-#### College Management
+## AI Use Cases
+
+### College Management
 
 - AI Attendance Assistant
 - AI Course Advisor
-- AI Student Support Assistant
-- AI Fee Inquiry Assistant
-- AI Academic Performance Advisor
+- AI Student Support Agent
+- AI FAQ Assistant
+- AI Academic Advisor
 
-#### Recruitment
+### Recruitment
 
-- Resume Screening Assistant
-- Candidate Recommendation Agent
-- Interview Scheduling Agent
-- Applicant Tracking Assistant
-- Talent Search Agent
+- Resume Screening
+- Candidate Ranking
+- Interview Scheduling
+- Skill Matching
 
-#### Placements
+### Placements
 
-- Placement Recommendation System
-- Skill Gap Analysis Agent
-- Career Guidance Assistant
-- Job Matching Agent
-- Placement Analytics Assistant
+- Placement Recommendation
+- Career Guidance
+- Skill Gap Analysis
 
-### Enterprise AI Workflow
+---
+
+## Enterprise AI Workflow
 
 ```text
 User Request
@@ -196,19 +202,6 @@ Response Generation
       ↓
 Action Execution
 ```
-
-### Risks of Enterprise AI
-
-- Hallucinations
-- Incorrect automation
-- Privacy concerns
-- Bias in decision-making
-- Wrong approvals
-- Excessive automation
-
-### Reflection
-
-AI agents have the potential to transform enterprise software by improving productivity, automation, decision support, and user experience while requiring strong governance and validation controls.
 
 ---
 
@@ -297,7 +290,6 @@ Dashboard Update
 - AI Approval Summarizer
 
 ---
-
 # Day 19 – Final Integrated Project Phase 2
 
 ## Topics Covered
